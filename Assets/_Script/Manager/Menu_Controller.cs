@@ -8,6 +8,13 @@ public class Menu_Controller : MonoBehaviour
     [SerializeField] private float _timeBeforeLoad = 0.5f;
 
     [SerializeField] private AudioSource _btnSound;
+    [SerializeField] private AudioSource _ambiantSound;
+
+    public void Start(){
+        if(_ambiantSound){
+            _ambiantSound.Play();
+        }
+    }
 
     public void LoadFilm(){
         StartCoroutine(TimeBeforeLoadFilm());

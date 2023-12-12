@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/Cinematic.unity
-    guid: ba081331c97e03f478c6d2f27238d099
+    path: Assets/Scenes/Begening/Cinematic.unity
+    guid: 8958fa525d9509c44a26af43e8002c79
+  - enabled: 1
+    path: Assets/Scenes/Begening/Marchand.unity
+    guid: 53b944b9f4f582a47a7838969543cd70
   m_configObjects: {}
