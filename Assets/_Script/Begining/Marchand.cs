@@ -12,6 +12,9 @@ public class Marchand : MonoBehaviour
     [SerializeField] private GameObject _boatButton1;
     [SerializeField] private GameObject _boatButton2;
     [SerializeField] private GameObject _boatButton3;
+    [SerializeField] private GameObject _btnIsland1;
+    [SerializeField] private GameObject _btnIsland2;
+    [SerializeField] private GameObject _btnIsland3;
     [SerializeField] private GameObject _imgMarchand;
     [SerializeField] private GameObject _imgLeSage;
     [SerializeField] private GameObject _imgMap;
@@ -72,16 +75,45 @@ public class Marchand : MonoBehaviour
         _imgLeSage.SetActive(false);
         _panDialogue3.SetActive(false);
         _imgMap.SetActive(true);
+        _btnIsland1.SetActive(true);
+        _btnIsland2.SetActive(true);
+        _btnIsland3.SetActive(true);
     }
 
-    public void LoadBlackSandAtolIsland()
+    public void LoadBlackSandAtoll()
     {
-        StartCoroutine(DelayBlackSandAtol());
+        StartCoroutine(DelayBlackSandAtoll());
     }
 
-    private IEnumerator DelayBlackSandAtol()
+    private IEnumerator DelayBlackSandAtoll()
     {
+        _btnSound.Play();
         yield return new WaitForSeconds(_timeBeforeLoad);
+        SceneManager.LoadScene("Black_Sand_Atoll", LoadSceneMode.Single);
+    }
+
+    public void LoadBootyIsland()
+    {
+        StartCoroutine(DelayBootyIsland());
+    }
+
+    private IEnumerator DelayBootyIsland()
+    {
+        _btnSound.Play();
+        yield return new WaitForSeconds(_timeBeforeLoad);
+        SceneManager.LoadScene("Booty_Island", LoadSceneMode.Single);
+    }
+
+    public void LoadCannonCove()
+    {
+        StartCoroutine(DelayCannonCove());
+    }
+
+    private IEnumerator DelayCannonCove()
+    {
+        _btnSound.Play();
+        yield return new WaitForSeconds(_timeBeforeLoad);
+        SceneManager.LoadScene("Cannon_Cove", LoadSceneMode.Single);
     }
     #endregion
 }

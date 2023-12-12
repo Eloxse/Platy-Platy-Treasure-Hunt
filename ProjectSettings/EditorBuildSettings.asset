@@ -14,4 +14,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Begening/Marchand.unity
     guid: 53b944b9f4f582a47a7838969543cd70
+  - enabled: 1
+    path: Assets/Scenes/Firts_Islands/Black_Sand_Atoll.unity
+    guid: f01e31c0345cbe04b8ef4056f483cfd5
+  - enabled: 1
+    path: Assets/Scenes/Firts_Islands/Booty_Island.unity
+    guid: bcb50c9fc8e91564b8f967c11850a9ec
+  - enabled: 1
+    path: Assets/Scenes/Firts_Islands/Cannon_Cove.unity
+    guid: b5d7042d7bcf426418e40cd4a81d3200
   m_configObjects: {}
