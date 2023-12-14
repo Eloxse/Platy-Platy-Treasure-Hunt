@@ -11,7 +11,7 @@ public class Booty_Island : MonoBehaviour
     [SerializeField] private AudioSource _btnSound;
     [SerializeField] private GameObject _imgBackground, _imgMap;
     [SerializeField] private GameObject _panDialogue1;
-    [SerializeField] private GameObject _btnBlackWater, _btnBlindMans;
+    [SerializeField] private GameObject _btnBlackWater, _btnBlindMans, _btnIslandDone;
     #endregion
 	
 	#region Properties
@@ -39,6 +39,7 @@ public class Booty_Island : MonoBehaviour
         _imgMap.SetActive(true);
         _btnBlackWater.SetActive(true);
         _btnBlindMans.SetActive(true);
+        _btnIslandDone.SetActive(true);
     }
 
     public void LoadBlackWater()

@@ -30,4 +30,17 @@ public class Menu_Controller : MonoBehaviour
         _btnSound.Play();
         Application.Quit();
     }
+
+
+    public void LoadMenu()
+    {
+        StartCoroutine(DelayMenu());
+    }
+
+    private IEnumerator DelayMenu()
+    {
+        _btnSound.Play();
+        yield return new WaitForSeconds(_timeBeforeLoad);
+        SceneManager.LoadScene("Menu", LoadSceneMode.Single);
+    }
 }
