@@ -29,4 +29,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Second_Islands/Boulder_Clay.unity
     guid: 28a7f73560aba1d4dae799aad1607045
+  - enabled: 1
+    path: Assets/Scenes/Second_Islands/Black_Water_Cave.unity
+    guid: cc6437c177e498944b8032474abc7174
+  - enabled: 1
+    path: Assets/Scenes/Second_Islands/Blind_Mans_Lagoon.unity
+    guid: 9ab0274922e372640a1dc82943f8a088
   m_configObjects: {}
