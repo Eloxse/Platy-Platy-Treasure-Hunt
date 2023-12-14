@@ -483,9 +483,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: f593cf4effa30fd43a9f91c55c65d376, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 8c0405d6b362b1b4eb61e3af52345755, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.1
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -2081,7 +2081,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 6547438c0d1448b47b8b07194bdb234e, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 6dd671aafe300f4449fcd23569d432ed, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.1
   m_Pitch: 1
@@ -2089,7 +2089,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 69
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -2273,7 +2273,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c34b59b5eff6b94f9978e2c492b2ecd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timeBeforeLoad: 0.2
+  _timeBeforeLoad: 1.2
   _btnSound: {fileID: 1007536726}
   _boatButton1: {fileID: 1997181964}
   _boatButton2: {fileID: 1007536723}
@@ -2990,7 +2990,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 6547438c0d1448b47b8b07194bdb234e, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 6dd671aafe300f4449fcd23569d432ed, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.1
   m_Pitch: 1
@@ -3182,7 +3182,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c34b59b5eff6b94f9978e2c492b2ecd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timeBeforeLoad: 0.2
+  _timeBeforeLoad: 1.2
   _btnSound: {fileID: 1172972567}
   _boatButton1: {fileID: 1997181964}
   _boatButton2: {fileID: 1007536723}
@@ -4790,7 +4790,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 6547438c0d1448b47b8b07194bdb234e, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 6dd671aafe300f4449fcd23569d432ed, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.1
   m_Pitch: 1
@@ -4982,7 +4982,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c34b59b5eff6b94f9978e2c492b2ecd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timeBeforeLoad: 0.2
+  _timeBeforeLoad: 1.2
   _btnSound: {fileID: 1997181967}
   _boatButton1: {fileID: 1997181964}
   _boatButton2: {fileID: 1007536723}
