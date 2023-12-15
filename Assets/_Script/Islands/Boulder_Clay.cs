@@ -9,9 +9,9 @@ public class Boulder_Clay : MonoBehaviour
     [SerializeField] private float _timeBeforeLoad = 0.5f;
 
     [SerializeField] private AudioSource _btnSound;
-    [SerializeField] private GameObject _imgBackground, _imgMap;
+    [SerializeField] private GameObject _imgBackground, _imgMap, _imgSink, _imgPrincess, _imgTreasure;
     [SerializeField] private GameObject _vid;
-    [SerializeField] private GameObject _panDialogue1, _panDialogue2, _panDialogue3, _panDialogue4;
+    [SerializeField] private GameObject _panDialogue1, _panDialogue2, _panDialogue3, _panDialogue4, _panDialogue5, _panDialogue6, _panDialogue7;
     [SerializeField] private GameObject _btnBoulderClay, _btnCannonCove;
     #endregion
 	
@@ -80,6 +80,52 @@ public class Boulder_Clay : MonoBehaviour
         _btnSound .Play();
         yield return new WaitForSeconds(_timeBeforeLoad);
         SceneManager.LoadScene("Black_Sand_Atoll", LoadSceneMode.Single);
+    }
+
+    public void Tempest()
+    {
+        StartCoroutine(DelayTempest());
+    }
+
+    private IEnumerator DelayTempest()
+    {
+        _btnSound.Play();
+        yield return new WaitForSeconds(_timeBeforeLoad);
+        _panDialogue3.SetActive(false);
+        _panDialogue5.SetActive(true);
+        _imgBackground.SetActive(true);
+        _imgSink.SetActive(true);
+    }
+
+
+    public void Princess()
+    {
+        StartCoroutine(DelayPrincess());
+    }
+
+    private IEnumerator DelayPrincess()
+    {
+        _btnSound.Play();
+        yield return new WaitForSeconds(_timeBeforeLoad);
+        _panDialogue4.SetActive(false);
+        _panDialogue6 .SetActive(true);
+        _imgBackground.SetActive(true);
+        _imgPrincess.SetActive(true);
+    }
+
+    public void Treasure()
+    {
+        StartCoroutine(DelayTreasure());
+    }
+
+    private IEnumerator DelayTreasure()
+    {
+        _btnSound.Play();
+        yield return new WaitForSeconds(_timeBeforeLoad);
+        _panDialogue4.SetActive(false);
+        _panDialogue7.SetActive(true);
+        _imgBackground.SetActive(true);
+        _imgTreasure.SetActive(true);
     }
     #endregion
 }
