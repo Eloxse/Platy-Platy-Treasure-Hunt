@@ -988,10 +988,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - Cannon Cove, a paradise island, its gentle breeze, its cool night, the abundance
-    of alcohol..  Having still not found any clues, you decide to enjoy the pleasures
-    of life. Three days have passed and you finally decide to go back to sea, you
-    feel that your team's impatience is growing.
+  - You have arrived at Blind Man's Lagoon, an island really far from everything...
+    but really far, far, far away. But a very beautiful island nonetheless! Like,
+    it's worth going there when you have to look for treasure...
   textSpeed: 0.05
   timeStartTextDialogue: 0.5
   _timeBeforeLoad: 0.5
@@ -1308,7 +1307,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 937e2b3d7bb885d45a848081f31486c8, type: 3}
+  m_audioClip: {fileID: 8300000, guid: fd21a08aaad99f347b00774075a6f690, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.2
   m_Pitch: 1
