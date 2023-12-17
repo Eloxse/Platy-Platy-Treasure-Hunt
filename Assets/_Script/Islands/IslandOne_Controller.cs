@@ -9,9 +9,9 @@ public class IslandOne_Controller : MonoBehaviour
     [SerializeField] private float _timeBeforeLoad = 0.5f;
 
     [SerializeField] private AudioSource _btnSound;
-    [SerializeField] private GameObject _panDialogue1, _panDialogue2, _panDialogue3;
+    [SerializeField] private GameObject _panDialogue1, _panDialogue2, _panDialogue3, _panDialogue4;
     [SerializeField] private GameObject _btnChoice1, _btnChoice2;
-    [SerializeField] private GameObject _imgClement, _imgBackground;
+    [SerializeField] private GameObject _imgClement, _imgBackground, _imgLost;
     #endregion
 	
 	#region Properties
@@ -63,6 +63,19 @@ public class IslandOne_Controller : MonoBehaviour
         _btnSound.Play();
         yield return new WaitForSeconds(_timeBeforeLoad);
         SceneManager.LoadScene("Chicken_Isle", LoadSceneMode.Single);
+    }
+
+    public void Lost(){
+        StartCoroutine(DelayLost());
+    }
+
+    private IEnumerator DelayLost(){
+        _btnSound.Play();
+        yield return new WaitForSeconds(_timeBeforeLoad);
+        _panDialogue3.SetActive(false);
+        _imgClement.SetActive(false);
+        _panDialogue4.SetActive(true);
+        _imgLost.SetActive(true);
     }
     #endregion
 }
