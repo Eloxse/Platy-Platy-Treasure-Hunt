@@ -1059,7 +1059,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - '     King Nico:'
+  - '     Gol D Nico:'
   textSpeed: 0.05
   timeStartTextDialogue: 0.5
   _timeBeforeLoad: 0.5

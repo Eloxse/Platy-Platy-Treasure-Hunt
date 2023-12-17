@@ -586,10 +586,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - Luck is still not on your side and the storm is catching up with you much faster
-    than you thought. But you have already reached the high seas. Lightning struck
-    your ship, and the storm caused your ruin. You now lie beneath the rushing waters
-    of Chicken Isle.
+  - Luck is still not on your side and the eternal storm Rayan is catching up with
+    you much faster than you thought. But you have already reached the high seas.
+    Lightning struck your ship, and the storm caused your ruin. You now lie beneath
+    the rushing waters of Chicken Isle.
   textSpeed: 0.05
   timeStartTextDialogue: 0.5
   _timeBeforeLoad: 0.5
