@@ -422,7 +422,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You suggest that your team talk to ease tensions.
+  m_text: You suggest that your team speak up to resolve issues.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 03862e0aa0d83284f9ac6fce8fbdc71d, type: 2}
   m_sharedMaterial: {fileID: -3061367705855319998, guid: 03862e0aa0d83284f9ac6fce8fbdc71d, type: 2}
@@ -1145,9 +1145,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - With your stomach full, fully rested and still tipsy from alcohol, tempers heat
-    up when you board your boat. The team questions your legitimacy as a group home.
-    Nothing better than getting back on the treasure hunt.
+  - With full belies, fully rested and still tipsy, tempers flares when you board
+    your boat. The team questions your legitimacy as a leader. Nothing better than
+    getting back on the treasure hunt to ease tensions.
   textSpeed: 0.05
   timeStartTextDialogue: 0.5
   _timeBeforeLoad: 0.5
@@ -1713,10 +1713,12 @@ MonoBehaviour:
   _panDialogue1: {fileID: 1496181463}
   _panDialogue2: {fileID: 1021786300}
   _panDialogue3: {fileID: 0}
+  _panDialogue4: {fileID: 0}
   _btnChoice1: {fileID: 0}
   _btnChoice2: {fileID: 0}
   _imgClement: {fileID: 0}
   _imgBackground: {fileID: 0}
+  _imgLost: {fileID: 0}
 --- !u!1 &1014512615
 GameObject:
   m_ObjectHideFlags: 0

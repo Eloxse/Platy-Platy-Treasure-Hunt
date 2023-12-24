@@ -1503,8 +1503,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - You land on Black Sand Atol, a charming little island where no soul lives. You
-    decide to set sail to find any clue on the island that would lead you to treasure.
+  - You land on Black Sand Atoll, a charming little island where no soul lives. You
+    decide to travel the island to find any clue that would lead you to treasure.
   textSpeed: 0.05
   timeStartTextDialogue: 0.5
   _timeBeforeLoad: 0.5
@@ -1658,9 +1658,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - You see a small makeshift ship arriving in the distance. It reminds you of something.
-    So you take out your telescope. And what a surprise you are when you discover
-    that they are your sworn enemies. Clement the Marvelous!!!
+  - You see a small makeshift ship comming from mile away. It reminds you of something.
+    You take out your spotting scope. But what a surprise when you discover that
+    they are your sworn enemies. Clement the Marvelous!!!
   textSpeed: 0.05
   timeStartTextDialogue: 0.5
   _timeBeforeLoad: 0.5
@@ -2886,7 +2886,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - A murderous madness takes possession of you, you pour down a rain of cannonballs
-    on your enemies. Unsurprisingly... Clement the marvelous is no longer part of
+    on your enemies. Unsurprisingly... Clement the Marvelous is no longer part of
     this world. May his boat rest in peace beneath these waters...
   textSpeed: 0.05
   timeStartTextDialogue: 0.5
@@ -3041,8 +3041,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - Stuffed like an oyster, you go around the island five times but you find nothing...
-    Nothing at all!!
+  - Stubborn like an oyster, you go around the island five times but you didn't find
+    anything... Nothing at all!!
   textSpeed: 0.05
   timeStartTextDialogue: 9
   _timeBeforeLoad: 0.5
@@ -3843,7 +3843,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You decide to resume the treasure hunt! Chicken Isle, Here we are !
+  m_text: You decide to resume the treasure hunt! Chicken Isle, here we are !
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 03862e0aa0d83284f9ac6fce8fbdc71d, type: 2}
   m_sharedMaterial: {fileID: -3061367705855319998, guid: 03862e0aa0d83284f9ac6fce8fbdc71d, type: 2}
@@ -4215,11 +4215,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - Yes... You toasted your victory too much, all of you, except Raphael. So you
-    decide to let Sam of the evening pilot the ship. Except he doesn't know his way
-    around on the open sea, he lost you. You don't know how to find your way back,
-    you now follow the winds, you just hope to find an island before you use up all
-    the food...
+  - Yes... You drank too much to your victory, all of you, except Raphael. You decide
+    to let the sober driver to take the helm. Except he doesn't even know how to
+    do... he lost us. You don't know how to find your way back, powered slowly by
+    the winds, hopefully finding an island before you use up all the food...
   textSpeed: 0.05
   timeStartTextDialogue: 0.5
   _timeBeforeLoad: 0.5
@@ -4379,7 +4378,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\rRage rises within you. You decide to go sink his building."
+  m_text: Rage rises within you. You decide to go sink his vessel.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 03862e0aa0d83284f9ac6fce8fbdc71d, type: 2}
   m_sharedMaterial: {fileID: -3061367705855319998, guid: 03862e0aa0d83284f9ac6fce8fbdc71d, type: 2}

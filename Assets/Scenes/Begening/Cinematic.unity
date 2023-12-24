@@ -1292,7 +1292,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - My faithful sailors, I send you to search for my lost treasure!! Choose your
-    building and set off to brave the gods of the sea.
+    vessel and set off to brave the gods of the sea.
   textSpeed: 0.05
   timeStartTextDialogue: 1.5
   _timeBeforeLoad: 0.5

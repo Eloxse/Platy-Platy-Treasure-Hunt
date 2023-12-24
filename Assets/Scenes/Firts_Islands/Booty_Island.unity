@@ -847,10 +847,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - Booty Ilsand and her beautiful shapes!!! It is always a pleasure to walk on its
-    beautiful beaches. What was your surprise when one of your youngsters told you
-    that he had found a scroll in a cave. This scroll shows the location of the treasure
-    on an island. But which one???
+  - Booty Island and her beautiful shapes!!! It's always a pleasure to walk on its
+    beautiful beaches. What was your surprise when one of your sailor tells you that
+    he found a scroll in a cave. This scroll shows the location of the treasure on
+    an island. But which one???
   textSpeed: 0.05
   timeStartTextDialogue: 0.5
   _timeBeforeLoad: 0.5
