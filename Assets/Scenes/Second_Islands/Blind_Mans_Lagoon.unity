@@ -1749,7 +1749,7 @@ MonoBehaviour:
   lines:
   - Arriving on the island, your eyes burn with desire at the sight of this charming
     creature. The prettiest pirate you've ever seen, Laura the bloodthirsty pirate.
-    you decide to give up everything for her, she is the most precious treasure you
+    You decide to give up everything for her, she is the most precious treasure you
     have ever seen.
   textSpeed: 0.05
   timeStartTextDialogue: 0.5
@@ -2417,9 +2417,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - Once is not customary, you go around the forest 5 times. You follow the path
-    on the treasure map about ten times. You made a hundred holes...NO treasure!!!
-    And then you start thinking! But yes!! it must be hidden in the cave.
+  - "Once is not customary, you go around the forest five times. You made a hundred
+    holes...And finally !!! You find the king\u2019s treasure after so much misadventures.
+    What a relief, you left the island and going to give back the treasure to the
+    king."
   textSpeed: 0.05
   timeStartTextDialogue: 0.5
   _timeBeforeLoad: 0.5
@@ -2574,8 +2575,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - You have arrived at Blind Man's Lagoon, an island really far from everything...
-    but really far, far, far away. But a very beautiful island nonetheless! Like,
-    it's worth going there when you have to look for treasure...
+    but really very, very far. However it's a very beautiful island! Like, it's worth
+    going there when you have to look for treasure...
   textSpeed: 0.05
   timeStartTextDialogue: 0.5
   _timeBeforeLoad: 0.5
@@ -2729,10 +2730,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - You still have doubts about the presence of the treasure on this island. It's
-    too simple to be true... the only difficulty was crossing the ocean for a month
-    to reach it! If I had treasure, I would hide it on a dangerous island. But that's
-    just my opinion!
+  - You still have doubts about the presence of the treasure on this island. The
+    only difficulty was crossing the ocean for a month to reach it! If I had a treasure,
+    I would hide it on a dangerous island, but that's just my point of view!
   textSpeed: 0.05
   timeStartTextDialogue: 0.5
   _timeBeforeLoad: 0.5
@@ -6864,10 +6864,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - As you explore you hear that you are not the only one on this desert island.
-    You move forward cautiously... And your heart breaks!!! It's Jules, the pirate
-    you worship the most in this world. He found the treasure, hearing your cry of
-    horror he fled with it. It's a shame the big money passes right under your nose.
+  - As you explore you hear that you are not alone on this desert island. You move
+    forward cautiously... And your heart breaks!!! It's Jules, the pirate you worship
+    the most in this world. He found it, hearing your cry of horror he fled with
+    the treasure. It's a shame the loot passes right under your nose.
   textSpeed: 0.05
   timeStartTextDialogue: 0.5
   _timeBeforeLoad: 0.5

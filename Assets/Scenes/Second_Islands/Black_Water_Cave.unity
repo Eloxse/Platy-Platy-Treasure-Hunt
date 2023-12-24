@@ -352,7 +352,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You try to finish your accounts despite everything...
+  m_text: You try to do your accounts despite everything...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 03862e0aa0d83284f9ac6fce8fbdc71d, type: 2}
   m_sharedMaterial: {fileID: -3061367705855319998, guid: 03862e0aa0d83284f9ac6fce8fbdc71d, type: 2}
@@ -1053,7 +1053,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Follow your instincts and search the island anyway.
+  m_text: Follow your instincts and search on the island anyway.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 03862e0aa0d83284f9ac6fce8fbdc71d, type: 2}
   m_sharedMaterial: {fileID: -3061367705855319998, guid: 03862e0aa0d83284f9ac6fce8fbdc71d, type: 2}
@@ -2399,7 +2399,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - 'Leo, your treasurer, is letting you know that this long journey has cost you
-    a lot of resources. And we should soon think about restocking it. You must now
+    a lot of resources. And we should  think soon about restocking it. You must now
     make a strategic decision:'
   textSpeed: 0.05
   timeStartTextDialogue: 0.5
@@ -2556,7 +2556,7 @@ MonoBehaviour:
   lines:
   - So you set off for Blind Man's Lagoon to get supplies, it's the closest island.
     While waiting to arrive at your destination, you do the accounts with Leo to
-    find out exactly where the stocks are. This is a very difficult task for the
+    find out exactly where the stocks status. This is a very difficult task for the
     pirate that you are!
   textSpeed: 0.05
   timeStartTextDialogue: 0.5
@@ -3826,8 +3826,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - One of your sailors, Lukas, can no longer stand your lack of judgment, he thinks
-    that you only make bad decisions... Determined to turn around, he kills you and
-    takes your place as captain to take over. treasure!
+    that you only take bad decisions... Determined to overtrhow you, he kills you
+    and takes your place as the captain to take over the treasure!
   textSpeed: 0.05
   timeStartTextDialogue: 0.5
   _timeBeforeLoad: 0.5
@@ -3987,7 +3987,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You try to finish your accounts despite everything...
+  m_text: You try to do your accounts despite everything...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 03862e0aa0d83284f9ac6fce8fbdc71d, type: 2}
   m_sharedMaterial: {fileID: -3061367705855319998, guid: 03862e0aa0d83284f9ac6fce8fbdc71d, type: 2}
@@ -4223,7 +4223,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - So you approach the island with full hopes of being right! Meanwhile Leo requisitions
+  - So you approach the island with hopes of being right! Meanwhile Leo requisitions
     you to do the accounts. But this thankless task is not made for you!
   textSpeed: 0.05
   timeStartTextDialogue: 0.5
@@ -4889,10 +4889,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - So you go to clear your mind on the deck of your beautiful ship, you notice something
-    fishy in the distance. You take out your long one to better see what's going
-    on. Is it a megalodon? Yes it's the mega Elodon!!! He saw your ship... It's over,
-    he's going to devour everything in his path.
+  - You go to clear your mind on the deck of your beautiful ship, you notice something
+    fishy in the distance. You take out your spotting scope to see better what's
+    going on. Is that a megalodon? Yes it's the mega Elodon!!! He saw your vessel...
+    It's over, he's going to devour everything in his path
   textSpeed: 0.05
   timeStartTextDialogue: 0.5
   _timeBeforeLoad: 0.5
@@ -5286,7 +5286,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\rListen to reason and go and resupply on the nearest island."
+  m_text: Listen to reason and go to resupply on the nearest island.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 03862e0aa0d83284f9ac6fce8fbdc71d, type: 2}
   m_sharedMaterial: {fileID: -3061367705855319998, guid: 03862e0aa0d83284f9ac6fce8fbdc71d, type: 2}

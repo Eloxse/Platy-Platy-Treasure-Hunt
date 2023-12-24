@@ -382,9 +382,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - Once is not customary, you go around the island 5 times. You follow the path
-    on the treasure map about ten times. You made a hundred holes...NO treasure!!!
-    And then you start thinking! But yes!! it must be hidden in the cave.
+  - "Once is not customary, you go around the forest five times. You made a hundred
+    holes...And finally !!! You find the king\u2019s treasure after so much misadventures.
+    What a relief, you left the island and going to give back the treasure to the
+    king."
   textSpeed: 0.05
   timeStartTextDialogue: 0.5
   _timeBeforeLoad: 0.5
@@ -861,9 +862,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - Indeed, the night door advises. You decide to wear your balls like a real pirate!
+  - Indeed, the night wears advise. You decide to wear your balls like a real pirate!
     You order your sailors to land on the island! And obviously, none of your fears
-    were founded... He doesn't know anything happened, your boat is complete.
+    were founded... Nothing happened, your boat is complete.
   textSpeed: 0.05
   timeStartTextDialogue: 0.5
   _timeBeforeLoad: 0.5
@@ -3252,7 +3253,7 @@ MonoBehaviour:
   lines:
   - The regrets are definitely present... Would you have really found this treasure
     if you would have dared to land? After all, they're just rocks. But hey, what's
-    done, is done and here you are on your way.. But to go where?
+    done is done and here you are on your way.. But to go where?
   textSpeed: 0.05
   timeStartTextDialogue: 0.5
   _timeBeforeLoad: 0.5
@@ -5331,10 +5332,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - Who says volcanic island, says danger. It will be a challenge to dock its shores,
-    it is not guaranteed that your boat will remain intact. Despite the fact that
-    you are convinced that the treasure is on this island. You hesitate for a long
-    time...
+  - Who says volcanic island, says danger. It will be a challenge to dock, it is
+    not guaranteed that your boat will remain intact. Despite the fact that you are
+    convinced that the treasure is on this island, you hesitate for a long time...
   textSpeed: 0.05
   timeStartTextDialogue: 0.5
   _timeBeforeLoad: 0.5
@@ -5976,7 +5976,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - Luck is still not on your side and the storm is catching up with you much faster
-    than you thought. But you have already reached the high seas. Lightning struck
+    than you thought but you have already reached the high seas. Lightning struck
     your ship, and the storm caused your ruin. You now lie beneath the rushing waters
     of Chicken Isle.
   textSpeed: 0.05
@@ -6132,10 +6132,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - At the entrance to the cave your eyes burn with desire when you see this charming
-    creature. The prettiest pirate you've ever seen, Laura the Bloodthirsty Pirate.
-    you decide to give up everything for her, she is the most precisous treasure
-    you have ever seen.
+  - Arriving on the island, your eyes burn with desire at the sight of this charming
+    creature. The prettiest pirate you've ever seen, Laura the bloodthirsty pirate.
+    You decide to give up everything for her, she is the most precious treasure you
+    have ever seen.
   textSpeed: 0.05
   timeStartTextDialogue: 0.5
   _timeBeforeLoad: 0.5

@@ -1658,7 +1658,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - You see a small makeshift ship comming from mile away. It reminds you of something.
+  - You see a small makeshift ship comming from miles away. It reminds you of something.
     You take out your spotting scope. But what a surprise when you discover that
     they are your sworn enemies. Clement the Marvelous!!!
   textSpeed: 0.05

@@ -988,8 +988,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - Cannon Cove, a paradise island, its gentle breeze, its cool night, the abundance
-    of alcohol..  Having still not found any clues, you decide to enjoy the pleasures
+  - Cannon Cove, a paradise island, its gentle breeze, its cool nights, the abundance
+    of alcohol... Having still not found any clues, you decide to enjoy the pleasures
     of life. Three days have passed and you finally decide to go back to sea, you
     feel that your team's impatience is growing.
   textSpeed: 0.05
@@ -1145,7 +1145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - With full belies, fully rested and still tipsy, tempers flares when you board
+  - With full belly, fully rested and still tipsy, tempers flares when you board
     your boat. The team questions your legitimacy as a leader. Nothing better than
     getting back on the treasure hunt to ease tensions.
   textSpeed: 0.05
@@ -2157,9 +2157,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - ' Alexys and Thomas, you are two faithful shipmates who are rebelling against
-    you. A violent mutiny seizes your ship. Outraged by their actions, you send them
-    to explore the depths of the sea. No one disrespects you!'
+  - Alexy and Thomas, your two faithful shipmates who are rebelling against you.
+    A violent mutiny seizes your ship. Outraged by their actions, you send them to
+    explore the depths of the sea. No one disrespects you!
   textSpeed: 0.05
   timeStartTextDialogue: 0.5
   _timeBeforeLoad: 0.5
@@ -2709,8 +2709,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\rNow that your two faithful companions have returned to the depths, you
-    are heading towards Boulder Clayer."
+  m_text: Now that your two faithful companions have joined to the depths, you are
+    heading towards Boulder Clayer.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 03862e0aa0d83284f9ac6fce8fbdc71d, type: 2}
   m_sharedMaterial: {fileID: -3061367705855319998, guid: 03862e0aa0d83284f9ac6fce8fbdc71d, type: 2}
