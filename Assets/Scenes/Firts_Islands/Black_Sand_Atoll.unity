@@ -236,7 +236,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2dc72f9cc91569d49a6a8c8d7785ee2c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4dec6aef504f7ee45ba8e8a986cc0f8e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -270,8 +270,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -9, y: 0}
-  m_SizeDelta: {x: 2065, y: 1160}
+  m_AnchoredPosition: {x: -126.6, y: 0}
+  m_SizeDelta: {x: 1027.4, y: 763.42}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &89064818
 GameObject:
@@ -956,7 +956,6 @@ GameObject:
   - component: {fileID: 337714955}
   - component: {fileID: 337714954}
   - component: {fileID: 337714953}
-  - component: {fileID: 337714952}
   m_Layer: 5
   m_Name: Img_Clement
   m_TagString: Untagged
@@ -964,27 +963,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!95 &337714952
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 337714951}
-  m_Enabled: 0
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 725a43f3e86252a4daa3d85945bc4242, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &337714953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1005,7 +983,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 42a43d29d7d114b4fa8512d13a98a368, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1a2f785113b3fdd4f9ce97f3aa5f2adb, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1039,8 +1017,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -10, y: 25}
-  m_SizeDelta: {x: 2040, y: 1170}
+  m_AnchoredPosition: {x: -24, y: 8.25}
+  m_SizeDelta: {x: 1287, y: 794}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &548194915
 GameObject:
