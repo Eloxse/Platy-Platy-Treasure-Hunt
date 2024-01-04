@@ -1508,14 +1508,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.509434, g: 0.509434, b: 0.509434, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 47d6c2ccb09da834d8dacb7a1bc0feb3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 290c3bb86329d3a49a84918834e4f71a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1550,7 +1550,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -114.5, y: 0}
-  m_SizeDelta: {x: 800, y: 700}
+  m_SizeDelta: {x: 849.3, y: 700}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &548194915
 GameObject:
@@ -2398,9 +2398,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - 'Leo, your treasurer, is letting you know that this long journey has cost you
-    a lot of resources. And we should  think soon about restocking it. You must now
-    make a strategic decision:'
+  - 'Leo your treasurer, is letting you know that this long journey has cost you
+    a lot of resources. We should think soon about restocking it. You must now make
+    a strategic decision:'
   textSpeed: 0.05
   timeStartTextDialogue: 0.5
   _timeBeforeLoad: 0.5
@@ -2556,8 +2556,8 @@ MonoBehaviour:
   lines:
   - So you set off for Blind Man's Lagoon to get supplies, it's the closest island.
     While waiting to arrive at your destination, you do the accounts with Leo to
-    find out exactly where the stocks status. This is a very difficult task for the
-    pirate that you are!
+    find out exactly what you need. This is a very difficult task for the pirate
+    that you are!
   textSpeed: 0.05
   timeStartTextDialogue: 0.5
   _timeBeforeLoad: 0.5
@@ -4891,8 +4891,8 @@ MonoBehaviour:
   lines:
   - You go to clear your mind on the deck of your beautiful ship, you notice something
     fishy in the distance. You take out your spotting scope to see better what's
-    going on. Is that a megalodon? Yes it's the mega Elodon!!! He saw your vessel...
-    It's over, he's going to devour everything in his path
+    going on. Is that a megalodon? Yes it's the mega Elodon!!! She saw your vessel...
+    It's over, she's going to devour everything in her path
   textSpeed: 0.05
   timeStartTextDialogue: 0.5
   _timeBeforeLoad: 0.5

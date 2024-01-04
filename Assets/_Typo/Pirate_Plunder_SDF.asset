@@ -168,7 +168,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
-  m_Name: Pirate Plunder SDF
+  m_Name: Pirate_Plunder_SDF
   m_EditorClassIdentifier: 
   hashCode: -2056472738
   material: {fileID: -3061367705855319998}
