@@ -6,23 +6,23 @@ using UnityEngine.SceneManagement;
 public class Blin_Mans_Lagoon : MonoBehaviour
 {
     #region Variables
-    [SerializeField] private float _timeBeforeLoad = 0.5f;
+    [Header("Manager")]
+    [SerializeField] private float timeBeforeLoad = 0.5f;
 
-    [SerializeField] private AudioSource _btnSound;
-    [SerializeField] private GameObject _panDialogue2, _panDialogue3, _panDialogue4, _panDialogue5, _panDialogue6, _panDialogue7;
-    [SerializeField] private GameObject _imgBackground, _imgMap, _imgPrincess, _imgTreasure, _imgTooLate;
-    [SerializeField] private GameObject _btnCannon, _btnBoulder, _btnBlindMans, _btnBooty;
+    [SerializeField] private AudioSource btnSound;
+
+    [Header("Button")]
+    [SerializeField] private GameObject btnCannon;
+    [SerializeField] private GameObject btnBoulder, btnBlindMans, btnBooty;
+
+    [Header("Images")]
+    [SerializeField] private GameObject imgBackground;
+    [SerializeField] private GameObject imgMap, imgPrincess, imgTreasure, imgTooLate;
+
+    [Header("Pannel")]
+    [SerializeField] private GameObject panDial2;
+    [SerializeField] private GameObject panDial3, panDial4, panDial5, panDial6, panDial7;
     #endregion
-	
-	#region Properties
-    #endregion
-	
-	#region Builtin Methods
-    void Start()
-    {
-        
-    }
-	#endregion
 
     #region Custom Methods
     public void GoingBack(){
@@ -30,16 +30,17 @@ public class Blin_Mans_Lagoon : MonoBehaviour
     }
 
     private IEnumerator DelayGoingBack(){
-        _btnSound.Play();
-        yield return new WaitForSeconds(_timeBeforeLoad);
-        _panDialogue2.SetActive(false);
-        _panDialogue3.SetActive(true);
-        _imgBackground.SetActive(true);
-        _imgMap.SetActive(true);
-        _btnBoulder.SetActive(true);
-        _btnCannon.SetActive(true);
-        _btnBlindMans.SetActive(true);
-        _btnBooty.SetActive(true);
+        btnSound.Play();
+        yield return new WaitForSeconds(timeBeforeLoad);
+        panDial2.SetActive(false);
+
+        panDial3.SetActive(true);
+        imgBackground.SetActive(true);
+        imgMap.SetActive(true);
+        btnBoulder.SetActive(true);
+        btnCannon.SetActive(true);
+        btnBlindMans.SetActive(true);
+        btnBooty.SetActive(true);
     }
 
     public void LoadCannonCove(){
@@ -47,8 +48,8 @@ public class Blin_Mans_Lagoon : MonoBehaviour
     }
 
     private IEnumerator DelayCannonCove(){
-        _btnSound.Play();
-        yield return new WaitForSeconds(_timeBeforeLoad);
+        btnSound.Play();
+        yield return new WaitForSeconds(timeBeforeLoad);
         SceneManager.LoadScene("Cannon_Cove", LoadSceneMode.Single);
     }
 
@@ -57,16 +58,18 @@ public class Blin_Mans_Lagoon : MonoBehaviour
     }
 
     private IEnumerator DelayBoulderClay(){
-        _btnSound.Play();
-        yield return new WaitForSeconds(_timeBeforeLoad);
-        _panDialogue3.SetActive(false);
-        _btnBlindMans.SetActive(false);
-        _btnBooty.SetActive(false);
-        _btnBoulder.SetActive(false);
-        _btnCannon.SetActive(false);
-        _panDialogue4.SetActive(true);
-        _imgBackground.SetActive(true);
-        _imgPrincess.SetActive(true);
+        btnSound.Play();
+        yield return new WaitForSeconds(timeBeforeLoad);
+        panDial3.SetActive(false);
+        btnBlindMans.SetActive(false);
+        btnBooty.SetActive(false);
+        btnBoulder.SetActive(false);
+        btnCannon.SetActive(false);
+        imgMap.SetActive(false);
+
+        panDial4.SetActive(true);
+        imgBackground.SetActive(true);
+        imgPrincess.SetActive(true);
     }
 
     public void Landing(){
@@ -74,10 +77,11 @@ public class Blin_Mans_Lagoon : MonoBehaviour
     }
 
     private IEnumerator DelayLanding(){
-        _btnSound.Play();
-        yield return new WaitForSeconds(_timeBeforeLoad);
-        _panDialogue2.SetActive(false);
-        _panDialogue5.SetActive(true);
+        btnSound.Play();
+        yield return new WaitForSeconds(timeBeforeLoad);
+        panDial2.SetActive(false);
+
+        panDial5.SetActive(true);
     }
 
     public void Forest(){
@@ -85,12 +89,13 @@ public class Blin_Mans_Lagoon : MonoBehaviour
     }
 
     private IEnumerator DelayForest(){
-        _btnSound.Play();
-        yield return new WaitForSeconds(_timeBeforeLoad);
-        _panDialogue5.SetActive(false);
-        _panDialogue6.SetActive(true);
-        _imgBackground.SetActive(true);
-        _imgTreasure.SetActive(true);
+        btnSound.Play();
+        yield return new WaitForSeconds(timeBeforeLoad);
+        panDial5.SetActive(false);
+
+        panDial6.SetActive(true);
+        imgBackground.SetActive(true);
+        imgTreasure.SetActive(true);
     }
 
     public void Beach(){
@@ -98,12 +103,13 @@ public class Blin_Mans_Lagoon : MonoBehaviour
     }
 
     private IEnumerator DelayBeach(){
-        _btnSound.Play();
-        yield return new WaitForSeconds(_timeBeforeLoad);
-        _panDialogue5.SetActive(false);
-        _panDialogue7.SetActive(true);
-        _imgBackground.SetActive(true);
-        _imgTooLate.SetActive(true);
+        btnSound.Play();
+        yield return new WaitForSeconds(timeBeforeLoad);
+        panDial5.SetActive(false);
+
+        panDial7.SetActive(true);
+        imgBackground.SetActive(true);
+        imgTooLate.SetActive(true);
     }
     #endregion
 }
