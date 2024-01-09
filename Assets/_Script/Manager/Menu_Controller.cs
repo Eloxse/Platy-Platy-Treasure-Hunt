@@ -6,15 +6,15 @@ using UnityEngine.SceneManagement;
 public class Menu_Controller : MonoBehaviour
 {
     [Header("Manager")]
-    [SerializeField] private float _timeBeforeLoad = 0.5f;
+    [SerializeField] private float timeBeforeLoad = 0.5f;
 
     [Header("Sounds")]
-    [SerializeField] private AudioSource _btnSound;
-    [SerializeField] private AudioSource _ambiantSound;
+    [SerializeField] private AudioSource btnSound;
+    [SerializeField] private AudioSource ambiantSound;
 
     public void Start(){
-        if(_ambiantSound){
-            _ambiantSound.Play();
+        if(ambiantSound){
+            ambiantSound.Play();
         }
     }
 
@@ -23,13 +23,13 @@ public class Menu_Controller : MonoBehaviour
     }
 
     private IEnumerator TimeBeforeLoadFilm(){
-        _btnSound.Play();
-        yield return new WaitForSeconds(_timeBeforeLoad);
+        btnSound.Play();
+        yield return new WaitForSeconds(timeBeforeLoad);
         SceneManager.LoadScene("Cinematic", LoadSceneMode.Single);
     }
 
     public void ExitGame(){
-        _btnSound.Play();
+        btnSound.Play();
         Application.Quit();
     }
     //Possibility to quit the game
@@ -41,8 +41,8 @@ public class Menu_Controller : MonoBehaviour
 
     private IEnumerator DelayMenu()
     {
-        _btnSound.Play();
-        yield return new WaitForSeconds(_timeBeforeLoad);
+        btnSound.Play();
+        yield return new WaitForSeconds(timeBeforeLoad);
         SceneManager.LoadScene("Menu", LoadSceneMode.Single);
     }
 }

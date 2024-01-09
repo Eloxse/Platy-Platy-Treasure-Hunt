@@ -7,18 +7,19 @@ using UnityEngine.SceneManagement;
 public class Dialogue_Manager : MonoBehaviour
 {
     #region Variables
+    [Header("Manager")]
+    [SerializeField] private float timeBeforeLoad = 0.5f;
+
+    [SerializeField] private AudioSource btnSound;
+
+    [Header("Text parameters")]
     [SerializeField] private string[] lines;
     [SerializeField] private float textSpeed;
     [SerializeField] private float timeStartTextDialogue = 0.5f;
-    [SerializeField] private float _timeBeforeLoad = 0.5f;
 
-    [SerializeField] private AudioSource _btnSound;
     [SerializeField] TextMeshProUGUI textComponent;
 
     private int _index;
-    #endregion
-	
-	#region Properties
     #endregion
 	
 	#region Builtin Methods
@@ -38,6 +39,7 @@ public class Dialogue_Manager : MonoBehaviour
             }
         }
     }
+    //Scrolling of the text when the mouse start to moove
     #endregion
 
     #region Custom Methods
@@ -55,6 +57,7 @@ public class Dialogue_Manager : MonoBehaviour
             yield return new WaitForSeconds(textSpeed);
         }
     }
+    //Increment of letters by time
 
     private void NextLine()
     {
@@ -83,9 +86,10 @@ public class Dialogue_Manager : MonoBehaviour
 
     private IEnumerator TimeBeforeLoadNext()
     {
-        _btnSound.Play();
-        yield return new WaitForSeconds(_timeBeforeLoad);
+        btnSound.Play();
+        yield return new WaitForSeconds(timeBeforeLoad);
         SceneManager.LoadScene("Marchand", LoadSceneMode.Single);
     }
+    //Change pannel when the texte is done
     #endregion
 }
