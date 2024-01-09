@@ -6,27 +6,22 @@ using UnityEngine.SceneManagement;
 public class Marchand : MonoBehaviour
 {
     #region Variables
-    [SerializeField] private float _timeBeforeLoad = 0.5f;
+    [SerializeField] private float timeBeforeLoad = 0.5f;
 
-    [SerializeField] private AudioSource _btnSound;
-    [SerializeField] private GameObject _boatButton1;
-    [SerializeField] private GameObject _boatButton2;
-    [SerializeField] private GameObject _boatButton3;
-    [SerializeField] private GameObject _btnIsland1;
-    [SerializeField] private GameObject _btnIsland2;
-    [SerializeField] private GameObject _btnIsland3;
-    [SerializeField] private GameObject _imgMarchand;
-    [SerializeField] private GameObject _imgLeSage;
-    [SerializeField] private GameObject _imgMap;
-    [SerializeField] private GameObject _panDialogue1;
-    [SerializeField] private GameObject _panDialogue2;
-    [SerializeField] private GameObject _panDialogue3;
-    #endregion
+    [SerializeField] private AudioSource btnSound;
 
-    #region Properties
-    #endregion
+    [Header("Buttons")]
+    [SerializeField] private GameObject btnBoat1;
+    [SerializeField] private GameObject btnBoat2, btnBoat3;
+    [SerializeField] private GameObject btnIsland1, btnIsland2, btnIsland3;
 
-    #region Builtin Methods
+    [Header("Images")]
+    [SerializeField] private GameObject imgSeller;
+    [SerializeField] private GameObject imgTheWise, imgMap;
+
+    [Header("Pannel")]
+    [SerializeField] private GameObject panDial1;
+    [SerializeField] private GameObject panDial2, panDial3;
     #endregion
 
     #region Custom Methods
@@ -37,15 +32,18 @@ public class Marchand : MonoBehaviour
 
     private IEnumerator DelayChoiceBoat()
     {
-        _btnSound.Play();
-        yield return new WaitForSeconds(_timeBeforeLoad);
-        _imgMarchand.SetActive(false);
-        _panDialogue1.SetActive(false);
-        _boatButton1.SetActive(true);
-        _boatButton2.SetActive(true);
-        _boatButton3.SetActive(true);
-        _panDialogue2.SetActive(true);
+        btnSound.Play();
+        yield return new WaitForSeconds(timeBeforeLoad);
+        imgSeller.SetActive(false);
+        panDial1.SetActive(false);
+
+        btnBoat1.SetActive(true);
+        btnBoat2.SetActive(true);
+        btnBoat3.SetActive(true);
+        panDial2.SetActive(true);
     }
+    //Load UI to choose the boat
+
     public void BoatButton()
     {
         StartCoroutine(TimeBeforeBoatButton());
@@ -53,15 +51,17 @@ public class Marchand : MonoBehaviour
 
     private IEnumerator TimeBeforeBoatButton()
     {
-        _btnSound.Play();
-        yield return new WaitForSeconds(_timeBeforeLoad);
-        _boatButton1.SetActive(false);
-        _boatButton2.SetActive(false);
-        _boatButton3.SetActive(false);
-        _panDialogue2.SetActive(false);
-        _imgLeSage.SetActive(true);
-        _panDialogue3.SetActive(true);
+        btnSound.Play();
+        yield return new WaitForSeconds(timeBeforeLoad);
+        btnBoat1.SetActive(false);
+        btnBoat2.SetActive(false);
+        btnBoat3.SetActive(false);
+        panDial2.SetActive(false);
+
+        imgTheWise.SetActive(true);
+        panDial3.SetActive(true);
     }
+    //Possibility to choose the boat
 
     public void LoadMap()
     {
@@ -70,15 +70,16 @@ public class Marchand : MonoBehaviour
 
     private IEnumerator DelayLoadMap()
     {
-        _btnSound.Play();
-        yield return new WaitForSeconds(_timeBeforeLoad);
-        _imgLeSage.SetActive(false);
-        _panDialogue3.SetActive(false);
-        _imgMap.SetActive(true);
-        _btnIsland1.SetActive(true);
-        _btnIsland2.SetActive(true);
-        _btnIsland3.SetActive(true);
+        btnSound.Play();
+        yield return new WaitForSeconds(timeBeforeLoad);
+        imgTheWise.SetActive(false);
+        panDial3.SetActive(false);
+        imgMap.SetActive(true);
+        btnIsland1.SetActive(true);
+        btnIsland2.SetActive(true);
+        btnIsland3.SetActive(true);
     }
+    //Load the Map UI with th choices 
 
     public void LoadBlackSandAtoll()
     {
@@ -87,8 +88,8 @@ public class Marchand : MonoBehaviour
 
     private IEnumerator DelayBlackSandAtoll()
     {
-        _btnSound.Play();
-        yield return new WaitForSeconds(_timeBeforeLoad);
+        btnSound.Play();
+        yield return new WaitForSeconds(timeBeforeLoad);
         SceneManager.LoadScene("Black_Sand_Atoll", LoadSceneMode.Single);
     }
 
@@ -99,8 +100,8 @@ public class Marchand : MonoBehaviour
 
     private IEnumerator DelayBootyIsland()
     {
-        _btnSound.Play();
-        yield return new WaitForSeconds(_timeBeforeLoad);
+        btnSound.Play();
+        yield return new WaitForSeconds(timeBeforeLoad);
         SceneManager.LoadScene("Booty_Island", LoadSceneMode.Single);
     }
 
@@ -111,9 +112,10 @@ public class Marchand : MonoBehaviour
 
     private IEnumerator DelayCannonCove()
     {
-        _btnSound.Play();
-        yield return new WaitForSeconds(_timeBeforeLoad);
+        btnSound.Play();
+        yield return new WaitForSeconds(timeBeforeLoad);
         SceneManager.LoadScene("Cannon_Cove", LoadSceneMode.Single);
     }
+    //Load scenes
     #endregion
 }

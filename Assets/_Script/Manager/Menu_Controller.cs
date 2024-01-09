@@ -5,8 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class Menu_Controller : MonoBehaviour
 {
+    [Header("Manager")]
     [SerializeField] private float _timeBeforeLoad = 0.5f;
 
+    [Header("Sounds")]
     [SerializeField] private AudioSource _btnSound;
     [SerializeField] private AudioSource _ambiantSound;
 
@@ -30,7 +32,7 @@ public class Menu_Controller : MonoBehaviour
         _btnSound.Play();
         Application.Quit();
     }
-
+    //Possibility to quit the game
 
     public void LoadMenu()
     {
