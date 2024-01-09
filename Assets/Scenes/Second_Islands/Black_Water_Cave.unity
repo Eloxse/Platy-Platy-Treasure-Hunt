@@ -659,7 +659,7 @@ MonoBehaviour:
   panDial3: {fileID: 0}
   panDial4: {fileID: 2001083894}
   panDial5: {fileID: 0}
-  panDial6: {fileID: 0}
+  panDial6: {fileID: 248573464}
 --- !u!1 &89064818
 GameObject:
   m_ObjectHideFlags: 0

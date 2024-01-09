@@ -5889,10 +5889,10 @@ MonoBehaviour:
   timeBeforeLoad: 0.5
   btnSound: {fileID: 0}
   lines:
-  - Luck is still not on your side and the storm is catching up with you much faster
-    than you thought but you have already reached the high seas. Lightning struck
-    your ship, and the storm caused your ruin. You now lie beneath the rushing waters
-    of Chicken Isle.
+  - A storm looms in the distance, however it is too late to turn back... and the
+    eternal storm Rayan is catching up with you much faster than you thought. Lightning
+    struck your ship, and the storm caused your ruin. You are now under the tumultuous
+    waters of Chicken Isle !
   textSpeed: 0.05
   timeStartTextDialogue: 0.5
   textComponent: {fileID: 1814426590}
@@ -6904,7 +6904,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You decide to wait a bit, a good night's sleep will clear your head!
+  m_text: You decide to wait a bit, a good night's sleep will clear your mind!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 03862e0aa0d83284f9ac6fce8fbdc71d, type: 2}
   m_sharedMaterial: {fileID: -3061367705855319998, guid: 03862e0aa0d83284f9ac6fce8fbdc71d, type: 2}

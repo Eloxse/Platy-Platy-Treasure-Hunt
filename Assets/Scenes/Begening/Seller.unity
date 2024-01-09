@@ -2268,7 +2268,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c34b59b5eff6b94f9978e2c492b2ecd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeBeforeLoad: 0.2
+  timeBeforeLoad: 1.2
   btnSound: {fileID: 1007536726}
   btnBoat1: {fileID: 1997181964}
   btnBoat2: {fileID: 1007536723}
@@ -3177,7 +3177,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c34b59b5eff6b94f9978e2c492b2ecd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeBeforeLoad: 0.2
+  timeBeforeLoad: 1.2
   btnSound: {fileID: 1172972567}
   btnBoat1: {fileID: 1997181964}
   btnBoat2: {fileID: 1007536723}
@@ -4955,7 +4955,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c34b59b5eff6b94f9978e2c492b2ecd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeBeforeLoad: 0.2
+  timeBeforeLoad: 1.2
   btnSound: {fileID: 1997181967}
   btnBoat1: {fileID: 1997181964}
   btnBoat2: {fileID: 1007536723}
