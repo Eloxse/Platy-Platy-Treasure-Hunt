@@ -236,9 +236,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a50cdc88117b1cb49933be0186e7663a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timeBeforeLoad: 0.2
-  _btnSound: {fileID: 0}
-  _ambiantSound: {fileID: 359789915}
+  timeBeforeLoad: 0.2
+  btnSound: {fileID: 0}
+  ambiantSound: {fileID: 359789915}
 --- !u!82 &359789915
 AudioSource:
   m_ObjectHideFlags: 0
@@ -995,9 +995,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a50cdc88117b1cb49933be0186e7663a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timeBeforeLoad: 0.5
-  _btnSound: {fileID: 1164324405}
-  _ambiantSound: {fileID: 0}
+  timeBeforeLoad: 0.2
+  btnSound: {fileID: 1164324405}
+  ambiantSound: {fileID: 0}
 --- !u!82 &1164324405
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1621,9 +1621,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a50cdc88117b1cb49933be0186e7663a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timeBeforeLoad: 0.5
-  _btnSound: {fileID: 2035106800}
-  _ambiantSound: {fileID: 0}
+  timeBeforeLoad: 0.2
+  btnSound: {fileID: 2035106800}
+  ambiantSound: {fileID: 0}
 --- !u!82 &2035106800
 AudioSource:
   m_ObjectHideFlags: 0

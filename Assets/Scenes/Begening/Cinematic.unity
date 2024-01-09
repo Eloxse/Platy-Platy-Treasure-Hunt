@@ -365,7 +365,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70abe30fc94d5ad4b89ff56c05d6d57c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeBeforeLoad: 0.5
+  timeBeforeLoad: 0.2
   btnSound: {fileID: 23366966}
   lines:
   - 
@@ -485,9 +485,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a50cdc88117b1cb49933be0186e7663a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeBeforeLoad: 0.5
+  timeBeforeLoad: 0.2
   btnSound: {fileID: 0}
-  ambiantSound: {fileID: 0}
+  ambiantSound: {fileID: 359789915}
 --- !u!82 &359789915
 AudioSource:
   m_ObjectHideFlags: 0

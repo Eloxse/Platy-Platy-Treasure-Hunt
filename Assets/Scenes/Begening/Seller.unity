@@ -470,9 +470,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a50cdc88117b1cb49933be0186e7663a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timeBeforeLoad: 0.2
-  _btnSound: {fileID: 0}
-  _ambiantSound: {fileID: 359789915}
+  timeBeforeLoad: 0.2
+  btnSound: {fileID: 0}
+  ambiantSound: {fileID: 359789915}
 --- !u!82 &359789915
 AudioSource:
   m_ObjectHideFlags: 0
@@ -657,12 +657,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70abe30fc94d5ad4b89ff56c05d6d57c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeBeforeLoad: 0.2
+  btnSound: {fileID: 0}
   lines:
   - '     Louis the wise man:'
   textSpeed: 0.05
   timeStartTextDialogue: 0.5
-  _timeBeforeLoad: 0.5
-  _btnSound: {fileID: 0}
   textComponent: {fileID: 430073870}
 --- !u!114 &430073870
 MonoBehaviour:
@@ -773,7 +773,6 @@ GameObject:
   - component: {fileID: 513860230}
   - component: {fileID: 513860229}
   - component: {fileID: 513860232}
-  - component: {fileID: 513860231}
   - component: {fileID: 513860233}
   m_Layer: 5
   m_Name: Img_Seller
@@ -839,32 +838,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 513860226}
   m_CullTransparentMesh: 1
---- !u!114 &513860231
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 513860226}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c34b59b5eff6b94f9978e2c492b2ecd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _timeBeforeLoad: 0.3
-  _btnSound: {fileID: 513860232}
-  _boatButton1: {fileID: 1997181964}
-  _boatButton2: {fileID: 1007536723}
-  _boatButton3: {fileID: 1172972564}
-  _btnIsland1: {fileID: 0}
-  _btnIsland2: {fileID: 0}
-  _btnIsland3: {fileID: 0}
-  _imgMarchand: {fileID: 513860226}
-  _imgLeSage: {fileID: 1334183550}
-  _imgMap: {fileID: 0}
-  _panDialogue1: {fileID: 287685179}
-  _panDialogue2: {fileID: 1922777729}
-  _panDialogue3: {fileID: 0}
 --- !u!82 &513860232
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1328,12 +1301,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70abe30fc94d5ad4b89ff56c05d6d57c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeBeforeLoad: 0.2
+  btnSound: {fileID: 0}
   lines:
   - '     Raphael the Seller:'
   textSpeed: 0.05
   timeStartTextDialogue: 0.5
-  _timeBeforeLoad: 0.5
-  _btnSound: {fileID: 0}
   textComponent: {fileID: 690396778}
 --- !u!222 &690396780
 CanvasRenderer:
@@ -1512,12 +1485,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70abe30fc94d5ad4b89ff56c05d6d57c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeBeforeLoad: 0.2
+  btnSound: {fileID: 0}
   lines:
   - 'It''s time to choose your galleon !!! '
   textSpeed: 0.05
   timeStartTextDialogue: 0.5
-  _timeBeforeLoad: 0.5
-  _btnSound: {fileID: 0}
   textComponent: {fileID: 715015286}
 --- !u!114 &715015286
 MonoBehaviour:
@@ -1877,13 +1850,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70abe30fc94d5ad4b89ff56c05d6d57c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeBeforeLoad: 0.2
+  btnSound: {fileID: 0}
   lines:
   - Is it the king who sends you to strip me of my magnificent boats? Choose wisely,
     and come back alive especially with the boat in one piece!!
   textSpeed: 0.05
   timeStartTextDialogue: 1.5
-  _timeBeforeLoad: 0.5
-  _btnSound: {fileID: 0}
   textComponent: {fileID: 797331621}
 --- !u!114 &797331621
 MonoBehaviour:
@@ -2295,20 +2268,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c34b59b5eff6b94f9978e2c492b2ecd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timeBeforeLoad: 1.2
-  _btnSound: {fileID: 1007536726}
-  _boatButton1: {fileID: 1997181964}
-  _boatButton2: {fileID: 1007536723}
-  _boatButton3: {fileID: 1172972564}
-  _btnIsland1: {fileID: 0}
-  _btnIsland2: {fileID: 0}
-  _btnIsland3: {fileID: 0}
-  _imgMarchand: {fileID: 513860226}
-  _imgLeSage: {fileID: 1334183550}
-  _imgMap: {fileID: 0}
-  _panDialogue1: {fileID: 287685179}
-  _panDialogue2: {fileID: 1922777729}
-  _panDialogue3: {fileID: 709399397}
+  timeBeforeLoad: 0.2
+  btnSound: {fileID: 1007536726}
+  btnBoat1: {fileID: 1997181964}
+  btnBoat2: {fileID: 1007536723}
+  btnBoat3: {fileID: 1172972564}
+  btnIsland1: {fileID: 0}
+  btnIsland2: {fileID: 0}
+  btnIsland3: {fileID: 0}
+  imgSeller: {fileID: 0}
+  imgTheWise: {fileID: 1334183550}
+  imgMap: {fileID: 0}
+  panDial1: {fileID: 0}
+  panDial2: {fileID: 1922777729}
+  panDial3: {fileID: 709399397}
 --- !u!1 &1155145758
 GameObject:
   m_ObjectHideFlags: 0
@@ -2359,14 +2332,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70abe30fc94d5ad4b89ff56c05d6d57c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeBeforeLoad: 0.2
+  btnSound: {fileID: 0}
   lines:
   - You have now chosen your vessel, you should leave as soon as possible! To help
     you, here is the so-called "Treasure map". Choose your first destination. Go
     and survive, poor fool!!!
   textSpeed: 0.05
   timeStartTextDialogue: 1.5
-  _timeBeforeLoad: 0.5
-  _btnSound: {fileID: 0}
   textComponent: {fileID: 1155145761}
 --- !u!114 &1155145761
 MonoBehaviour:
@@ -2851,20 +2824,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c34b59b5eff6b94f9978e2c492b2ecd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timeBeforeLoad: 0.5
-  _btnSound: {fileID: 1164358323}
-  _boatButton1: {fileID: 0}
-  _boatButton2: {fileID: 0}
-  _boatButton3: {fileID: 0}
-  _btnIsland1: {fileID: 0}
-  _btnIsland2: {fileID: 0}
-  _btnIsland3: {fileID: 0}
-  _imgMarchand: {fileID: 0}
-  _imgLeSage: {fileID: 0}
-  _imgMap: {fileID: 0}
-  _panDialogue1: {fileID: 0}
-  _panDialogue2: {fileID: 0}
-  _panDialogue3: {fileID: 0}
+  timeBeforeLoad: 0.2
+  btnSound: {fileID: 1164358323}
+  btnBoat1: {fileID: 0}
+  btnBoat2: {fileID: 0}
+  btnBoat3: {fileID: 0}
+  btnIsland1: {fileID: 0}
+  btnIsland2: {fileID: 0}
+  btnIsland3: {fileID: 0}
+  imgSeller: {fileID: 0}
+  imgTheWise: {fileID: 0}
+  imgMap: {fileID: 0}
+  panDial1: {fileID: 0}
+  panDial2: {fileID: 0}
+  panDial3: {fileID: 0}
 --- !u!82 &1164358323
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3204,20 +3177,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c34b59b5eff6b94f9978e2c492b2ecd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timeBeforeLoad: 1.2
-  _btnSound: {fileID: 1172972567}
-  _boatButton1: {fileID: 1997181964}
-  _boatButton2: {fileID: 1007536723}
-  _boatButton3: {fileID: 1172972564}
-  _btnIsland1: {fileID: 0}
-  _btnIsland2: {fileID: 0}
-  _btnIsland3: {fileID: 0}
-  _imgMarchand: {fileID: 513860226}
-  _imgLeSage: {fileID: 1334183550}
-  _imgMap: {fileID: 0}
-  _panDialogue1: {fileID: 287685179}
-  _panDialogue2: {fileID: 1922777729}
-  _panDialogue3: {fileID: 709399397}
+  timeBeforeLoad: 0.2
+  btnSound: {fileID: 1172972567}
+  btnBoat1: {fileID: 1997181964}
+  btnBoat2: {fileID: 1007536723}
+  btnBoat3: {fileID: 1172972564}
+  btnIsland1: {fileID: 0}
+  btnIsland2: {fileID: 0}
+  btnIsland3: {fileID: 0}
+  imgSeller: {fileID: 0}
+  imgTheWise: {fileID: 1334183550}
+  imgMap: {fileID: 0}
+  panDial1: {fileID: 0}
+  panDial2: {fileID: 1922777729}
+  panDial3: {fileID: 709399397}
 --- !u!1 &1291091522
 GameObject:
   m_ObjectHideFlags: 0
@@ -3267,7 +3240,6 @@ GameObject:
   - component: {fileID: 1334183554}
   - component: {fileID: 1334183553}
   - component: {fileID: 1334183552}
-  - component: {fileID: 1334183551}
   m_Layer: 5
   m_Name: Img_TheWise
   m_TagString: Untagged
@@ -3275,27 +3247,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!95 &1334183551
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1334183550}
-  m_Enabled: 0
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 725a43f3e86252a4daa3d85945bc4242, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1334183552
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3406,20 +3357,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c34b59b5eff6b94f9978e2c492b2ecd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timeBeforeLoad: 0.5
-  _btnSound: {fileID: 1404977621}
-  _boatButton1: {fileID: 0}
-  _boatButton2: {fileID: 0}
-  _boatButton3: {fileID: 0}
-  _btnIsland1: {fileID: 0}
-  _btnIsland2: {fileID: 0}
-  _btnIsland3: {fileID: 0}
-  _imgMarchand: {fileID: 0}
-  _imgLeSage: {fileID: 0}
-  _imgMap: {fileID: 0}
-  _panDialogue1: {fileID: 0}
-  _panDialogue2: {fileID: 0}
-  _panDialogue3: {fileID: 0}
+  timeBeforeLoad: 0.2
+  btnSound: {fileID: 1404977621}
+  btnBoat1: {fileID: 0}
+  btnBoat2: {fileID: 0}
+  btnBoat3: {fileID: 0}
+  btnIsland1: {fileID: 0}
+  btnIsland2: {fileID: 0}
+  btnIsland3: {fileID: 0}
+  imgSeller: {fileID: 0}
+  imgTheWise: {fileID: 0}
+  imgMap: {fileID: 0}
+  panDial1: {fileID: 0}
+  panDial2: {fileID: 0}
+  panDial3: {fileID: 0}
 --- !u!114 &1404977618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3813,20 +3764,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c34b59b5eff6b94f9978e2c492b2ecd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timeBeforeLoad: 0.5
-  _btnSound: {fileID: 1839776116}
-  _boatButton1: {fileID: 0}
-  _boatButton2: {fileID: 0}
-  _boatButton3: {fileID: 0}
-  _btnIsland1: {fileID: 0}
-  _btnIsland2: {fileID: 0}
-  _btnIsland3: {fileID: 0}
-  _imgMarchand: {fileID: 0}
-  _imgLeSage: {fileID: 0}
-  _imgMap: {fileID: 0}
-  _panDialogue1: {fileID: 0}
-  _panDialogue2: {fileID: 0}
-  _panDialogue3: {fileID: 0}
+  timeBeforeLoad: 0.2
+  btnSound: {fileID: 1839776116}
+  btnBoat1: {fileID: 0}
+  btnBoat2: {fileID: 0}
+  btnBoat3: {fileID: 0}
+  btnIsland1: {fileID: 0}
+  btnIsland2: {fileID: 0}
+  btnIsland3: {fileID: 0}
+  imgSeller: {fileID: 0}
+  imgTheWise: {fileID: 0}
+  imgMap: {fileID: 0}
+  panDial1: {fileID: 0}
+  panDial2: {fileID: 0}
+  panDial3: {fileID: 0}
 --- !u!114 &1839776113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4491,20 +4442,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c34b59b5eff6b94f9978e2c492b2ecd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timeBeforeLoad: 0.5
-  _btnSound: {fileID: 1952366026}
-  _boatButton1: {fileID: 1997181964}
-  _boatButton2: {fileID: 1007536723}
-  _boatButton3: {fileID: 1172972564}
-  _btnIsland1: {fileID: 0}
-  _btnIsland2: {fileID: 0}
-  _btnIsland3: {fileID: 0}
-  _imgMarchand: {fileID: 513860226}
-  _imgLeSage: {fileID: 0}
-  _imgMap: {fileID: 0}
-  _panDialogue1: {fileID: 287685179}
-  _panDialogue2: {fileID: 1922777729}
-  _panDialogue3: {fileID: 0}
+  timeBeforeLoad: 0.2
+  btnSound: {fileID: 1952366026}
+  btnBoat1: {fileID: 1997181964}
+  btnBoat2: {fileID: 1007536723}
+  btnBoat3: {fileID: 1172972564}
+  btnIsland1: {fileID: 0}
+  btnIsland2: {fileID: 0}
+  btnIsland3: {fileID: 0}
+  imgSeller: {fileID: 513860226}
+  imgTheWise: {fileID: 0}
+  imgMap: {fileID: 0}
+  panDial1: {fileID: 287685179}
+  panDial2: {fileID: 1922777729}
+  panDial3: {fileID: 0}
 --- !u!1 &1984742969
 GameObject:
   m_ObjectHideFlags: 0
@@ -4518,7 +4469,7 @@ GameObject:
   - component: {fileID: 1984742974}
   - component: {fileID: 1984742973}
   - component: {fileID: 1984742972}
-  - component: {fileID: 1984742971}
+  - component: {fileID: 1984742976}
   m_Layer: 5
   m_Name: Btn_Suivant
   m_TagString: Untagged
@@ -4545,32 +4496,6 @@ RectTransform:
   m_AnchoredPosition: {x: -100, y: 42.8}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1984742971
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1984742969}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c34b59b5eff6b94f9978e2c492b2ecd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _timeBeforeLoad: 0.2
-  _btnSound: {fileID: 1984742972}
-  _boatButton1: {fileID: 1997181964}
-  _boatButton2: {fileID: 1007536723}
-  _boatButton3: {fileID: 1172972564}
-  _btnIsland1: {fileID: 1164358317}
-  _btnIsland2: {fileID: 1404977615}
-  _btnIsland3: {fileID: 1839776110}
-  _imgMarchand: {fileID: 513860226}
-  _imgLeSage: {fileID: 1334183550}
-  _imgMap: {fileID: 1415476429}
-  _panDialogue1: {fileID: 709399397}
-  _panDialogue2: {fileID: 1922777729}
-  _panDialogue3: {fileID: 709399397}
 --- !u!82 &1984742972
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4711,7 +4636,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1984742971}
+      - m_Target: {fileID: 1984742976}
         m_TargetAssemblyTypeName: Marchand, Assembly-CSharp
         m_MethodName: LoadMap
         m_Mode: 1
@@ -4761,6 +4686,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1984742969}
   m_CullTransparentMesh: 1
+--- !u!114 &1984742976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1984742969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c34b59b5eff6b94f9978e2c492b2ecd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeBeforeLoad: 0.2
+  btnSound: {fileID: 1984742972}
+  btnBoat1: {fileID: 0}
+  btnBoat2: {fileID: 0}
+  btnBoat3: {fileID: 0}
+  btnIsland1: {fileID: 1164358317}
+  btnIsland2: {fileID: 1839776110}
+  btnIsland3: {fileID: 1404977615}
+  imgSeller: {fileID: 0}
+  imgTheWise: {fileID: 1334183550}
+  imgMap: {fileID: 1415476429}
+  panDial1: {fileID: 0}
+  panDial2: {fileID: 0}
+  panDial3: {fileID: 709399397}
 --- !u!1 &1997181964
 GameObject:
   m_ObjectHideFlags: 0
@@ -5004,20 +4955,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c34b59b5eff6b94f9978e2c492b2ecd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timeBeforeLoad: 1.2
-  _btnSound: {fileID: 1997181967}
-  _boatButton1: {fileID: 1997181964}
-  _boatButton2: {fileID: 1007536723}
-  _boatButton3: {fileID: 1172972564}
-  _btnIsland1: {fileID: 0}
-  _btnIsland2: {fileID: 0}
-  _btnIsland3: {fileID: 0}
-  _imgMarchand: {fileID: 0}
-  _imgLeSage: {fileID: 1334183550}
-  _imgMap: {fileID: 0}
-  _panDialogue1: {fileID: 287685179}
-  _panDialogue2: {fileID: 1922777729}
-  _panDialogue3: {fileID: 709399397}
+  timeBeforeLoad: 0.2
+  btnSound: {fileID: 1997181967}
+  btnBoat1: {fileID: 1997181964}
+  btnBoat2: {fileID: 1007536723}
+  btnBoat3: {fileID: 1172972564}
+  btnIsland1: {fileID: 0}
+  btnIsland2: {fileID: 0}
+  btnIsland3: {fileID: 0}
+  imgSeller: {fileID: 0}
+  imgTheWise: {fileID: 1334183550}
+  imgMap: {fileID: 0}
+  panDial1: {fileID: 0}
+  panDial2: {fileID: 1922777729}
+  panDial3: {fileID: 709399397}
 --- !u!1 &2086956376
 GameObject:
   m_ObjectHideFlags: 0

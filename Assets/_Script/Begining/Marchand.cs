@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class Marchand : MonoBehaviour
 {
     #region Variables
+    [Header("Manager")]
     [SerializeField] private float timeBeforeLoad = 0.5f;
 
     [SerializeField] private AudioSource btnSound;
@@ -74,6 +75,7 @@ public class Marchand : MonoBehaviour
         yield return new WaitForSeconds(timeBeforeLoad);
         imgTheWise.SetActive(false);
         panDial3.SetActive(false);
+
         imgMap.SetActive(true);
         btnIsland1.SetActive(true);
         btnIsland2.SetActive(true);
