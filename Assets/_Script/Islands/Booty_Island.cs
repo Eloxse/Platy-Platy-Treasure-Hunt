@@ -6,22 +6,21 @@ using UnityEngine.SceneManagement;
 public class Booty_Island : MonoBehaviour
 {
     #region Variables
-    [SerializeField] private float _timeBeforeLoad = 0.5f;
+    [Header("Manager")]
+    [SerializeField] private float timeBeforeLoad = 0.5f;
 
-    [SerializeField] private AudioSource _btnSound;
-    [SerializeField] private GameObject _imgBackground, _imgMap;
-    [SerializeField] private GameObject _panDialogue1;
-    [SerializeField] private GameObject _btnBlackWater, _btnBlindMans, _btnIslandDone;
-    #endregion
-	
-	#region Properties
-    #endregion
-	
-	#region Builtin Methods
-    void Start()
-    {
-        
-    }
+    [SerializeField] private AudioSource btnSound;
+
+    [Header("Buttons")]
+    [SerializeField] private GameObject btnBlackWater;
+    [SerializeField] private GameObject btnBlindMans, btnIslandDone;
+
+    [Header("Images")]
+    [SerializeField] private GameObject imgBackground;
+    [SerializeField] private GameObject imgMap;
+
+    [Header("Pannel")]
+    [SerializeField] private GameObject panDial1;
     #endregion
 
     #region Custom Methods
@@ -32,14 +31,15 @@ public class Booty_Island : MonoBehaviour
 
     private IEnumerator DelayNextPan()
     {
-        _btnSound.Play();
-        yield return new WaitForSeconds(_timeBeforeLoad);
-        _panDialogue1.SetActive(false);
-        _imgBackground.SetActive(true);
-        _imgMap.SetActive(true);
-        _btnBlackWater.SetActive(true);
-        _btnBlindMans.SetActive(true);
-        _btnIslandDone.SetActive(true);
+        btnSound.Play();
+        yield return new WaitForSeconds(timeBeforeLoad);
+        panDial1.SetActive(false);
+
+        imgBackground.SetActive(true);
+        imgMap.SetActive(true);
+        btnBlackWater.SetActive(true);
+        btnBlindMans.SetActive(true);
+        btnIslandDone.SetActive(true);
     }
 
     public void LoadBlackWater()
@@ -49,8 +49,8 @@ public class Booty_Island : MonoBehaviour
 
     private IEnumerator DelayBlackWater()
     {
-        _btnSound.Play();
-        yield return new WaitForSeconds(_timeBeforeLoad);
+        btnSound.Play();
+        yield return new WaitForSeconds(timeBeforeLoad);
         SceneManager.LoadScene("Black_Water_Cave", LoadSceneMode.Single);
     }
 
@@ -61,8 +61,8 @@ public class Booty_Island : MonoBehaviour
 
     private IEnumerator DelayBlindMans()
     {
-        _btnSound.Play();
-        yield return new WaitForSeconds(_timeBeforeLoad);
+        btnSound.Play();
+        yield return new WaitForSeconds(timeBeforeLoad);
         SceneManager.LoadScene("Blind_Mans_Lagoon", LoadSceneMode.Single);
     }
     #endregion
