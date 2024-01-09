@@ -6,22 +6,22 @@ using UnityEngine.SceneManagement;
 public class IslandOne_Controller : MonoBehaviour
 {
     #region Variables
-    [SerializeField] private float _timeBeforeLoad = 0.5f;
+    [Header("Manager")]
+    [SerializeField] private float timeBeforeLoad = 0.5f;
 
-    [SerializeField] private AudioSource _btnSound;
-    [SerializeField] private GameObject _panDialogue1, _panDialogue2, _panDialogue3, _panDialogue4;
-    [SerializeField] private GameObject _btnChoice1, _btnChoice2;
-    [SerializeField] private GameObject _imgClement, _imgBackground, _imgLost;
-    #endregion
-	
-	#region Properties
-    #endregion
-	
-	#region Builtin Methods
-    void Start()
-    {
-        
-    }
+    [SerializeField] private AudioSource btnSound;
+
+    [Header("Buttons")]
+    [SerializeField] private GameObject btnChoice1;
+    [SerializeField] private GameObject btnChoice2;
+
+    [Header("Images")]
+    [SerializeField] private GameObject imgClement;
+    [SerializeField] private GameObject imgBackground, imgLost;
+
+    [Header("Pannel")]
+    [SerializeField] private GameObject panDial1;
+    [SerializeField] private GameObject panDial2, panDial3, panDial4;
     #endregion
 
     #region Custom Methods
@@ -32,10 +32,11 @@ public class IslandOne_Controller : MonoBehaviour
 
     private IEnumerator DelayNextPannel()
     {
-        _btnSound.Play();
-        yield return new WaitForSeconds(_timeBeforeLoad);
-        _panDialogue1.SetActive(false);
-        _panDialogue2.SetActive(true);
+        btnSound.Play();
+        yield return new WaitForSeconds(timeBeforeLoad);
+        panDial1.SetActive(false);
+
+        panDial2.SetActive(true);
     }
 
     public void ChoiceOne()
@@ -45,12 +46,13 @@ public class IslandOne_Controller : MonoBehaviour
 
     private IEnumerator DelayChoiceOne()
     {
-        _btnSound.Play();
-        yield return new WaitForSeconds(_timeBeforeLoad);
-        _panDialogue2.SetActive(false);
-        _imgBackground.SetActive(true);
-        _imgClement.SetActive(true);
-        _panDialogue3.SetActive(true);
+        btnSound.Play();
+        yield return new WaitForSeconds(timeBeforeLoad);
+        panDial2.SetActive(false);
+
+        imgBackground.SetActive(true);
+        imgClement.SetActive(true);
+        panDial3.SetActive(true);
     }
 
     public void ChoiceTwo()
@@ -60,8 +62,8 @@ public class IslandOne_Controller : MonoBehaviour
 
     private IEnumerator DelayChoiceTwo()
     {
-        _btnSound.Play();
-        yield return new WaitForSeconds(_timeBeforeLoad);
+        btnSound.Play();
+        yield return new WaitForSeconds(timeBeforeLoad);
         SceneManager.LoadScene("Chicken_Isle", LoadSceneMode.Single);
     }
 
@@ -70,12 +72,13 @@ public class IslandOne_Controller : MonoBehaviour
     }
 
     private IEnumerator DelayLost(){
-        _btnSound.Play();
-        yield return new WaitForSeconds(_timeBeforeLoad);
-        _panDialogue3.SetActive(false);
-        _imgClement.SetActive(false);
-        _panDialogue4.SetActive(true);
-        _imgLost.SetActive(true);
+        btnSound.Play();
+        yield return new WaitForSeconds(timeBeforeLoad);
+        panDial3.SetActive(false);
+        imgClement.SetActive(false);
+
+        panDial4.SetActive(true);
+        imgLost.SetActive(true);
     }
     #endregion
 }
