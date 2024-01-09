@@ -88,7 +88,7 @@ public class Dialogue_Manager : MonoBehaviour
     {
         btnSound.Play();
         yield return new WaitForSeconds(timeBeforeLoad);
-        SceneManager.LoadScene("Marchand", LoadSceneMode.Single);
+        SceneManager.LoadScene("Seller", LoadSceneMode.Single);
     }
     //Change pannel when the texte is done
     #endregion
