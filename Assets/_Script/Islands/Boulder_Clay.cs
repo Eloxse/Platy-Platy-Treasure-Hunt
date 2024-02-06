@@ -6,23 +6,23 @@ using UnityEngine.SceneManagement;
 public class Boulder_Clay : MonoBehaviour
 {
     #region Variables
-    [SerializeField] private float _timeBeforeLoad = 0.5f;
+    [Header("Manager")]
+    [SerializeField] private float timeBeforeLoad = 0.5f;
 
-    [SerializeField] private AudioSource _btnSound;
-    [SerializeField] private GameObject _imgBackground, _imgMap, _imgSink, _imgPrincess, _imgTreasure;
-    [SerializeField] private GameObject _vid;
-    [SerializeField] private GameObject _panDialogue1, _panDialogue2, _panDialogue3, _panDialogue4, _panDialogue5, _panDialogue6, _panDialogue7;
-    [SerializeField] private GameObject _btnBoulderClay, _btnCannonCove;
-    #endregion
-	
-	#region Properties
-    #endregion
-	
-	#region Builtin Methods
-    void Start()
-    {
-        
-    }
+    [SerializeField] private AudioSource btnSound;
+
+    [Header("Button")]
+    [SerializeField] private GameObject btnBoulderClay; 
+    [SerializeField] private GameObject btnCannonCove;
+
+    [Header("Images")]
+    [SerializeField] private GameObject imgBackground; 
+    [SerializeField] private GameObject imgMap, imgSink, imgPrincess, imgTreasure;
+    [SerializeField] private GameObject vid;
+
+    [Header("Pannel")]
+    [SerializeField] private GameObject panDial1;
+    [SerializeField] private GameObject panDial2, panDial3, panDial4, panDial5, panDial6, panDial7;
     #endregion
 
     #region Custom Methods
@@ -33,15 +33,16 @@ public class Boulder_Clay : MonoBehaviour
 
     private IEnumerator DelayNext()
     {
-        _btnSound.Play();
-        yield return new WaitForSeconds(_timeBeforeLoad);
-        _imgBackground.SetActive(false);
-        _imgMap.SetActive(false);
-        _panDialogue1.SetActive(false);
-        _btnBoulderClay.SetActive(false);
-        _btnCannonCove.SetActive(false);
-        _vid.SetActive(true);
-        _panDialogue2.SetActive(true);
+        btnSound.Play();
+        yield return new WaitForSeconds(timeBeforeLoad);
+        imgBackground.SetActive(false);
+        imgMap.SetActive(false);
+        panDial1.SetActive(false);
+        btnBoulderClay.SetActive(false);
+        btnCannonCove.SetActive(false);
+
+        vid.SetActive(true);
+        panDial2.SetActive(true);
     }
 
     public void DontApproach()
@@ -51,10 +52,11 @@ public class Boulder_Clay : MonoBehaviour
 
     private IEnumerator DelayDontApproach()
     {
-        _btnSound.Play();
-        yield return new WaitForSeconds(_timeBeforeLoad);
-        _panDialogue2.SetActive(false);
-        _panDialogue3 .SetActive(true);
+        btnSound.Play();
+        yield return new WaitForSeconds(timeBeforeLoad);
+        panDial2.SetActive(false);
+
+        panDial3 .SetActive(true);
     }
 
     public void Wait()
@@ -64,10 +66,11 @@ public class Boulder_Clay : MonoBehaviour
 
     private IEnumerator DelayWait()
     {
-        _btnSound.Play();
-        yield return new WaitForSeconds(_timeBeforeLoad);
-        _panDialogue2 .SetActive(false);
-        _panDialogue4 .SetActive(true);
+        btnSound.Play();
+        yield return new WaitForSeconds(timeBeforeLoad);
+        panDial2 .SetActive(false);
+
+        panDial4 .SetActive(true);
     }
 
     public void BlackSand()
@@ -77,8 +80,8 @@ public class Boulder_Clay : MonoBehaviour
 
     private IEnumerator DelayBlackSand()
     {
-        _btnSound .Play();
-        yield return new WaitForSeconds(_timeBeforeLoad);
+        btnSound .Play();
+        yield return new WaitForSeconds(timeBeforeLoad);
         SceneManager.LoadScene("Black_Sand_Atoll", LoadSceneMode.Single);
     }
 
@@ -89,14 +92,14 @@ public class Boulder_Clay : MonoBehaviour
 
     private IEnumerator DelayTempest()
     {
-        _btnSound.Play();
-        yield return new WaitForSeconds(_timeBeforeLoad);
-        _panDialogue3.SetActive(false);
-        _panDialogue5.SetActive(true);
-        _imgBackground.SetActive(true);
-        _imgSink.SetActive(true);
-    }
+        btnSound.Play();
+        yield return new WaitForSeconds(timeBeforeLoad);
+        panDial3.SetActive(false);
 
+        panDial5.SetActive(true);
+        imgBackground.SetActive(true);
+        imgSink.SetActive(true);
+    }
 
     public void Princess()
     {
@@ -105,12 +108,13 @@ public class Boulder_Clay : MonoBehaviour
 
     private IEnumerator DelayPrincess()
     {
-        _btnSound.Play();
-        yield return new WaitForSeconds(_timeBeforeLoad);
-        _panDialogue4.SetActive(false);
-        _panDialogue6 .SetActive(true);
-        _imgBackground.SetActive(true);
-        _imgPrincess.SetActive(true);
+        btnSound.Play();
+        yield return new WaitForSeconds(timeBeforeLoad);
+        panDial4.SetActive(false);
+
+        panDial6 .SetActive(true);
+        imgBackground.SetActive(true);
+        imgPrincess.SetActive(true);
     }
 
     public void Treasure()
@@ -120,12 +124,13 @@ public class Boulder_Clay : MonoBehaviour
 
     private IEnumerator DelayTreasure()
     {
-        _btnSound.Play();
-        yield return new WaitForSeconds(_timeBeforeLoad);
-        _panDialogue4.SetActive(false);
-        _panDialogue7.SetActive(true);
-        _imgBackground.SetActive(true);
-        _imgTreasure.SetActive(true);
+        btnSound.Play();
+        yield return new WaitForSeconds(timeBeforeLoad);
+        panDial4.SetActive(false);
+
+        panDial7.SetActive(true);
+        imgBackground.SetActive(true);
+        imgTreasure.SetActive(true);
     }
     #endregion
 }

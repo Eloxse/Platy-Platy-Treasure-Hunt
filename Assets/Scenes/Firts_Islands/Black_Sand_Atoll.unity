@@ -846,9 +846,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a50cdc88117b1cb49933be0186e7663a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timeBeforeLoad: 0.2
-  _btnSound: {fileID: 0}
-  _ambiantSound: {fileID: 332798139}
+  timeBeforeLoad: 0.2
+  btnSound: {fileID: 0}
+  ambiantSound: {fileID: 332798139}
 --- !u!82 &332798139
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1073,17 +1073,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf3ed295037ccc4095b1fda8070b2b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timeBeforeLoad: 0.2
-  _btnSound: {fileID: 548194918}
-  _panDialogue1: {fileID: 1496181463}
-  _panDialogue2: {fileID: 1021786300}
-  _panDialogue3: {fileID: 131488950}
-  _panDialogue4: {fileID: 0}
-  _btnChoice1: {fileID: 548194915}
-  _btnChoice2: {fileID: 1014566695}
-  _imgClement: {fileID: 337714951}
-  _imgBackground: {fileID: 19317224}
-  _imgLost: {fileID: 0}
+  timeBeforeLoad: 0.2
+  btnSound: {fileID: 548194918}
+  btnChoice1: {fileID: 0}
+  btnChoice2: {fileID: 0}
+  imgClement: {fileID: 337714951}
+  imgBackground: {fileID: 19317224}
+  imgLost: {fileID: 0}
+  panDial1: {fileID: 0}
+  panDial2: {fileID: 1021786300}
+  panDial3: {fileID: 131488950}
+  panDial4: {fileID: 0}
 --- !u!82 &548194918
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1458,13 +1458,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70abe30fc94d5ad4b89ff56c05d6d57c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeBeforeLoad: 0.5
+  btnSound: {fileID: 0}
   lines:
   - You land on Black Sand Atoll, a charming little island where no soul lives. You
     decide to travel the island to find any clue that would lead you to treasure.
   textSpeed: 0.05
   timeStartTextDialogue: 0.5
-  _timeBeforeLoad: 0.5
-  _btnSound: {fileID: 0}
   textComponent: {fileID: 577516242}
 --- !u!114 &577516242
 MonoBehaviour:
@@ -1613,14 +1613,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70abe30fc94d5ad4b89ff56c05d6d57c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeBeforeLoad: 0.5
+  btnSound: {fileID: 0}
   lines:
   - You see a small makeshift ship comming from miles away. It reminds you of something.
     You take out your spotting scope. But what a surprise when you discover that
     they are your sworn enemies. Clement the Marvelous!!!
   textSpeed: 0.05
   timeStartTextDialogue: 0.5
-  _timeBeforeLoad: 0.5
-  _btnSound: {fileID: 0}
   textComponent: {fileID: 589809516}
 --- !u!114 &589809516
 MonoBehaviour:
@@ -1772,17 +1772,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf3ed295037ccc4095b1fda8070b2b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timeBeforeLoad: 0.5
-  _btnSound: {fileID: 656240744}
-  _panDialogue1: {fileID: 0}
-  _panDialogue2: {fileID: 0}
-  _panDialogue3: {fileID: 131488950}
-  _panDialogue4: {fileID: 724890145}
-  _btnChoice1: {fileID: 0}
-  _btnChoice2: {fileID: 0}
-  _imgClement: {fileID: 337714951}
-  _imgBackground: {fileID: 0}
-  _imgLost: {fileID: 70406419}
+  timeBeforeLoad: 0.2
+  btnSound: {fileID: 656240744}
+  btnChoice1: {fileID: 0}
+  btnChoice2: {fileID: 0}
+  imgClement: {fileID: 337714951}
+  imgBackground: {fileID: 0}
+  imgLost: {fileID: 70406419}
+  panDial1: {fileID: 0}
+  panDial2: {fileID: 0}
+  panDial3: {fileID: 131488950}
+  panDial4: {fileID: 724890145}
 --- !u!82 &656240744
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2386,17 +2386,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf3ed295037ccc4095b1fda8070b2b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timeBeforeLoad: 0.2
-  _btnSound: {fileID: 986336252}
-  _panDialogue1: {fileID: 1496181463}
-  _panDialogue2: {fileID: 1021786300}
-  _panDialogue3: {fileID: 0}
-  _panDialogue4: {fileID: 0}
-  _btnChoice1: {fileID: 0}
-  _btnChoice2: {fileID: 0}
-  _imgClement: {fileID: 0}
-  _imgBackground: {fileID: 0}
-  _imgLost: {fileID: 0}
+  timeBeforeLoad: 0.2
+  btnSound: {fileID: 986336252}
+  btnChoice1: {fileID: 0}
+  btnChoice2: {fileID: 0}
+  imgClement: {fileID: 0}
+  imgBackground: {fileID: 0}
+  imgLost: {fileID: 0}
+  panDial1: {fileID: 1496181463}
+  panDial2: {fileID: 1021786300}
+  panDial3: {fileID: 0}
+  panDial4: {fileID: 0}
 --- !u!1 &1014512615
 GameObject:
   m_ObjectHideFlags: 0
@@ -2489,17 +2489,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf3ed295037ccc4095b1fda8070b2b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timeBeforeLoad: 0.2
-  _btnSound: {fileID: 1014566698}
-  _panDialogue1: {fileID: 1496181463}
-  _panDialogue2: {fileID: 1021786300}
-  _panDialogue3: {fileID: 131488950}
-  _panDialogue4: {fileID: 0}
-  _btnChoice1: {fileID: 1014566695}
-  _btnChoice2: {fileID: 1014566695}
-  _imgClement: {fileID: 0}
-  _imgBackground: {fileID: 0}
-  _imgLost: {fileID: 0}
+  timeBeforeLoad: 0.2
+  btnSound: {fileID: 1014566698}
+  btnChoice1: {fileID: 0}
+  btnChoice2: {fileID: 0}
+  imgClement: {fileID: 0}
+  imgBackground: {fileID: 0}
+  imgLost: {fileID: 0}
+  panDial1: {fileID: 0}
+  panDial2: {fileID: 0}
+  panDial3: {fileID: 0}
+  panDial4: {fileID: 0}
 --- !u!82 &1014566698
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2840,14 +2840,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70abe30fc94d5ad4b89ff56c05d6d57c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeBeforeLoad: 0.5
+  btnSound: {fileID: 0}
   lines:
   - A murderous madness takes possession of you, you pour down a rain of cannonballs
     on your enemies. Unsurprisingly... Clement the Marvelous is no longer part of
     this world. May his boat rest in peace beneath these waters...
   textSpeed: 0.05
   timeStartTextDialogue: 0.5
-  _timeBeforeLoad: 0.5
-  _btnSound: {fileID: 0}
   textComponent: {fileID: 1050556214}
 --- !u!114 &1050556214
 MonoBehaviour:
@@ -2996,13 +2996,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70abe30fc94d5ad4b89ff56c05d6d57c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeBeforeLoad: 0.5
+  btnSound: {fileID: 0}
   lines:
   - Stubborn like an oyster, you go around the island five times but you didn't find
     anything... Nothing at all!!
   textSpeed: 0.05
   timeStartTextDialogue: 9
-  _timeBeforeLoad: 0.5
-  _btnSound: {fileID: 0}
   textComponent: {fileID: 1064150727}
 --- !u!114 &1064150727
 MonoBehaviour:
@@ -3154,17 +3154,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf3ed295037ccc4095b1fda8070b2b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timeBeforeLoad: 0.2
-  _btnSound: {fileID: 1210233582}
-  _panDialogue1: {fileID: 1496181463}
-  _panDialogue2: {fileID: 131488950}
-  _panDialogue3: {fileID: 131488950}
-  _panDialogue4: {fileID: 0}
-  _btnChoice1: {fileID: 1210233579}
-  _btnChoice2: {fileID: 0}
-  _imgClement: {fileID: 337714951}
-  _imgBackground: {fileID: 19317224}
-  _imgLost: {fileID: 0}
+  timeBeforeLoad: 0.2
+  btnSound: {fileID: 1210233582}
+  btnChoice1: {fileID: 0}
+  btnChoice2: {fileID: 0}
+  imgClement: {fileID: 0}
+  imgBackground: {fileID: 0}
+  imgLost: {fileID: 0}
+  panDial1: {fileID: 0}
+  panDial2: {fileID: 0}
+  panDial3: {fileID: 0}
+  panDial4: {fileID: 0}
 --- !u!82 &1210233582
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3509,7 +3509,7 @@ GameObject:
   - component: {fileID: 1395100363}
   - component: {fileID: 1395100362}
   - component: {fileID: 1395100361}
-  - component: {fileID: 1395100360}
+  - component: {fileID: 1395100365}
   m_Layer: 5
   m_Name: Btn_Menu
   m_TagString: Untagged
@@ -3537,21 +3537,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 500, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1395100360
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1395100358}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a50cdc88117b1cb49933be0186e7663a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _timeBeforeLoad: 0.5
-  _btnSound: {fileID: 1395100361}
-  _ambiantSound: {fileID: 0}
 --- !u!82 &1395100361
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3692,7 +3677,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1395100360}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Menu_Controller, Assembly-CSharp
         m_MethodName: LoadMenu
         m_Mode: 1
@@ -3742,6 +3727,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1395100358}
   m_CullTransparentMesh: 1
+--- !u!114 &1395100365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1395100358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a50cdc88117b1cb49933be0186e7663a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeBeforeLoad: 0.2
+  btnSound: {fileID: 1395100361}
+  ambiantSound: {fileID: 0}
 --- !u!1 &1435327643
 GameObject:
   m_ObjectHideFlags: 0
@@ -4170,6 +4170,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70abe30fc94d5ad4b89ff56c05d6d57c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeBeforeLoad: 0.5
+  btnSound: {fileID: 0}
   lines:
   - Yes... You drank too much to your victory, all of you, except Raphael. You decide
     to let the sober driver to take the helm. Except he doesn't even know how to
@@ -4177,8 +4179,6 @@ MonoBehaviour:
     the winds, hopefully finding an island before you use up all the food...
   textSpeed: 0.05
   timeStartTextDialogue: 0.5
-  _timeBeforeLoad: 0.5
-  _btnSound: {fileID: 0}
   textComponent: {fileID: 1743716556}
 --- !u!114 &1743716556
 MonoBehaviour:

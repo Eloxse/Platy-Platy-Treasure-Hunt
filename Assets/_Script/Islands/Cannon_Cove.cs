@@ -6,21 +6,18 @@ using UnityEngine.SceneManagement;
 public class Cannon_Cove : MonoBehaviour
 {
     #region Variables
-    [SerializeField] private float _timeBeforeLoad = 0.5f;
+    [Header("Manager")]
+    [SerializeField] private float timeBeforeLoad = 0.5f;
 
-    [SerializeField] private AudioSource _btnSound;
-    [SerializeField] private GameObject _panDialogue2, _panDialogue3;
-    [SerializeField] private GameObject _imgBackgournd, _imgMutiny;
-    #endregion
-	
-	#region Properties
-    #endregion
-	
-	#region Builtin Methods
-    void Start()
-    {
-        
-    }
+    [SerializeField] private AudioSource btnSound;
+
+    [Header("Images")]
+    [SerializeField] private GameObject imgBackgournd;
+    [SerializeField] private GameObject imgMutiny;
+
+    [Header("Pannel")]
+    [SerializeField] private GameObject panDial2;
+    [SerializeField] private GameObject panDial3;
     #endregion
 
     #region Custom Methods
@@ -31,8 +28,8 @@ public class Cannon_Cove : MonoBehaviour
 
     private IEnumerator DelayBoulderClay()
     {
-        _btnSound.Play();
-        yield return new WaitForSeconds(_timeBeforeLoad);
+        btnSound.Play();
+        yield return new WaitForSeconds(timeBeforeLoad);
         SceneManager.LoadScene("Boulder_Clay", LoadSceneMode.Single);
     }
 
@@ -43,12 +40,13 @@ public class Cannon_Cove : MonoBehaviour
 
     private IEnumerator DelayMutiny()
     {
-        _btnSound.Play();
-        yield return new WaitForSeconds(_timeBeforeLoad);
-        _panDialogue2.SetActive(false);
-        _panDialogue3.SetActive(true);
-        _imgBackgournd.SetActive(true);
-        _imgMutiny.SetActive(true);
+        btnSound.Play();
+        yield return new WaitForSeconds(timeBeforeLoad);
+        panDial2.SetActive(false);
+
+        panDial3.SetActive(true);
+        imgBackgournd.SetActive(true);
+        imgMutiny.SetActive(true);
     }
     #endregion
 }

@@ -5,23 +5,23 @@ using UnityEngine;
 public class Chicken_Isle : MonoBehaviour
 {
     #region Variables
-    [SerializeField] private float _timeBeforeLoad = 0.5f;
+    [Header("Manager")]
+    [SerializeField] private float timeBeforeLoad = 0.5f;
 
-    [SerializeField] private AudioSource _btnSound;
-    [SerializeField] private GameObject _imgBackground, _imgMap, _imgKraken, _imgSinking;
-    [SerializeField] private GameObject _vid;
-    [SerializeField] private GameObject _panDialogue1, _panDialogue2, _panDialogue3, _panDialogue4;
-    [SerializeField] private GameObject _btnChickenIsle, _btnBlackSand;
-    #endregion
-	
-	#region Properties
-    #endregion
-	
-	#region Builtin Methods
-    void Start()
-    {
-        
-    }
+    [SerializeField] private AudioSource btnSound;
+
+    [Header("Manager")]
+    [SerializeField] private GameObject btnChickenIsle; 
+    [SerializeField] private GameObject btnBlackSand;
+
+    [Header("Manager")]
+    [SerializeField] private GameObject imgBackground;
+    [SerializeField] private GameObject imgMap, imgKraken, imgSinking;
+    [SerializeField] private GameObject vid;
+
+    [Header("Manager")]
+    [SerializeField] private GameObject panDial1;
+    [SerializeField] private GameObject panDial2, panDial3, panDial4;
     #endregion
 
     #region Custom Methods
@@ -32,15 +32,16 @@ public class Chicken_Isle : MonoBehaviour
 
     private IEnumerator DelayVideo()
     {
-        _btnSound.Play();
-        yield return new WaitForSeconds(_timeBeforeLoad);
-        _imgBackground.SetActive(false);
-        _imgMap.SetActive(false);
-        _panDialogue1.SetActive(false);
-        _btnBlackSand.SetActive(false);
-        _btnChickenIsle.SetActive(false);
-        _vid.SetActive(true);
-        _panDialogue2.SetActive(true);
+        btnSound.Play();
+        yield return new WaitForSeconds(timeBeforeLoad);
+        imgBackground.SetActive(false);
+        imgMap.SetActive(false);
+        panDial1.SetActive(false);
+        btnBlackSand.SetActive(false);
+        btnChickenIsle.SetActive(false);
+
+        vid.SetActive(true);
+        panDial2.SetActive(true);
     }
 
     public void Octopus()
@@ -50,13 +51,14 @@ public class Chicken_Isle : MonoBehaviour
 
     private IEnumerator DelayOctopus()
     {
-        _btnSound.Play();
-        yield return new WaitForSeconds(_timeBeforeLoad);
-        _vid.SetActive(false);
-        _panDialogue2.SetActive(false);
-        _imgBackground.SetActive(true);
-        _imgKraken.SetActive(true);
-        _panDialogue3.SetActive(true);
+        btnSound.Play();
+        yield return new WaitForSeconds(timeBeforeLoad);
+        vid.SetActive(false);
+        panDial2.SetActive(false);
+
+        imgBackground.SetActive(true);
+        imgKraken.SetActive(true);
+        panDial3.SetActive(true);
     }
     
     public void Sink()
@@ -66,13 +68,14 @@ public class Chicken_Isle : MonoBehaviour
 
     private IEnumerator DelaySink()
     {
-        _btnSound.Play();
-        yield return new WaitForSeconds(_timeBeforeLoad);
-        _vid.SetActive(false);
-        _panDialogue2.SetActive(false);
-        _imgBackground.SetActive(true);
-        _imgSinking.SetActive(true);
-        _panDialogue4.SetActive(true);
+        btnSound.Play();
+        yield return new WaitForSeconds(timeBeforeLoad);
+        vid.SetActive(false);
+        panDial2.SetActive(false);
+
+        imgBackground.SetActive(true);
+        imgSinking.SetActive(true);
+        panDial4.SetActive(true);
     }
     #endregion
 }

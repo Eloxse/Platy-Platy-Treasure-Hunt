@@ -134,7 +134,6 @@ GameObject:
   - component: {fileID: 1713496}
   - component: {fileID: 1713495}
   - component: {fileID: 1713494}
-  - component: {fileID: 1713493}
   m_Layer: 5
   m_Name: Img_Killer
   m_TagString: Untagged
@@ -142,27 +141,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!95 &1713493
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1713492}
-  m_Enabled: 0
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 725a43f3e86252a4daa3d85945bc4242, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1713494
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -183,7 +161,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: deac7b0a8c2a676428351ad9875354cc, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d0437b1ab1f64d5428f878a445f136ca, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -217,8 +195,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -114.5, y: 0}
-  m_SizeDelta: {x: 800, y: 700}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &19317224
 GameObject:
@@ -672,16 +650,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61bc6d47a7d857e4c8a19e5dace3130b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timeBeforeLoad: 0.5
-  _btnSound: {fileID: 46599453}
-  _panDialogue2: {fileID: 0}
-  _panDialogue3: {fileID: 0}
-  _panDialogue4: {fileID: 2001083894}
-  _panDialogue5: {fileID: 0}
-  _panDialogue6: {fileID: 248573464}
-  _imgBackground: {fileID: 19317224}
-  _imgMegalodon: {fileID: 0}
-  _imgKiller: {fileID: 1713492}
+  timeBeforeLoad: 0.2
+  btnSound: {fileID: 46599453}
+  imgBackground: {fileID: 19317224}
+  imgMegalodon: {fileID: 0}
+  imgKiller: {fileID: 1713492}
+  panDial2: {fileID: 0}
+  panDial3: {fileID: 0}
+  panDial4: {fileID: 2001083894}
+  panDial5: {fileID: 0}
+  panDial6: {fileID: 248573464}
 --- !u!1 &89064818
 GameObject:
   m_ObjectHideFlags: 0
@@ -803,9 +781,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a50cdc88117b1cb49933be0186e7663a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timeBeforeLoad: 0.5
-  _btnSound: {fileID: 157832835}
-  _ambiantSound: {fileID: 0}
+  timeBeforeLoad: 0.2
+  btnSound: {fileID: 157832835}
+  ambiantSound: {fileID: 0}
 --- !u!82 &157832835
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1466,7 +1444,6 @@ GameObject:
   - component: {fileID: 337714955}
   - component: {fileID: 337714954}
   - component: {fileID: 337714953}
-  - component: {fileID: 337714952}
   m_Layer: 5
   m_Name: Img_Megalodon
   m_TagString: Untagged
@@ -1474,27 +1451,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!95 &337714952
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 337714951}
-  m_Enabled: 0
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 725a43f3e86252a4daa3d85945bc4242, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &337714953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1795,16 +1751,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61bc6d47a7d857e4c8a19e5dace3130b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timeBeforeLoad: 0.5
-  _btnSound: {fileID: 548194918}
-  _panDialogue2: {fileID: 1021786300}
-  _panDialogue3: {fileID: 1724431666}
-  _panDialogue4: {fileID: 0}
-  _panDialogue5: {fileID: 0}
-  _panDialogue6: {fileID: 0}
-  _imgBackground: {fileID: 0}
-  _imgMegalodon: {fileID: 0}
-  _imgKiller: {fileID: 0}
+  timeBeforeLoad: 0.2
+  btnSound: {fileID: 548194918}
+  imgBackground: {fileID: 0}
+  imgMegalodon: {fileID: 0}
+  imgKiller: {fileID: 0}
+  panDial2: {fileID: 1021786300}
+  panDial3: {fileID: 1724431666}
+  panDial4: {fileID: 0}
+  panDial5: {fileID: 0}
+  panDial6: {fileID: 0}
 --- !u!1 &557371139
 GameObject:
   m_ObjectHideFlags: 0
@@ -1989,13 +1945,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70abe30fc94d5ad4b89ff56c05d6d57c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeBeforeLoad: 0.5
+  btnSound: {fileID: 0}
   lines:
   - You opted for Black Water Cave. It is not one of your favorite destinations.
     But when it comes to searching for treasure, you can't afford to be choosy.
   textSpeed: 0.05
   timeStartTextDialogue: 0.5
-  _timeBeforeLoad: 0.5
-  _btnSound: {fileID: 0}
   textComponent: {fileID: 577516242}
 --- !u!114 &577516242
 MonoBehaviour:
@@ -2337,16 +2293,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61bc6d47a7d857e4c8a19e5dace3130b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timeBeforeLoad: 0.5
-  _btnSound: {fileID: 583795892}
-  _panDialogue2: {fileID: 0}
-  _panDialogue3: {fileID: 1724431666}
-  _panDialogue4: {fileID: 0}
-  _panDialogue5: {fileID: 0}
-  _panDialogue6: {fileID: 0}
-  _imgBackground: {fileID: 0}
-  _imgMegalodon: {fileID: 0}
-  _imgKiller: {fileID: 0}
+  timeBeforeLoad: 0.2
+  btnSound: {fileID: 583795892}
+  imgBackground: {fileID: 0}
+  imgMegalodon: {fileID: 0}
+  imgKiller: {fileID: 0}
+  panDial2: {fileID: 0}
+  panDial3: {fileID: 0}
+  panDial4: {fileID: 0}
+  panDial5: {fileID: 0}
+  panDial6: {fileID: 0}
 --- !u!1 &589809513
 GameObject:
   m_ObjectHideFlags: 0
@@ -2397,14 +2353,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70abe30fc94d5ad4b89ff56c05d6d57c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeBeforeLoad: 0.5
+  btnSound: {fileID: 0}
   lines:
   - 'Leo your treasurer, is letting you know that this long journey has cost you
     a lot of resources. We should think soon about restocking it. You must now make
     a strategic decision:'
   textSpeed: 0.05
   timeStartTextDialogue: 0.5
-  _timeBeforeLoad: 0.5
-  _btnSound: {fileID: 0}
   textComponent: {fileID: 589809516}
 --- !u!114 &589809516
 MonoBehaviour:
@@ -2553,6 +2509,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70abe30fc94d5ad4b89ff56c05d6d57c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeBeforeLoad: 0.5
+  btnSound: {fileID: 0}
   lines:
   - So you set off for Blind Man's Lagoon to get supplies, it's the closest island.
     While waiting to arrive at your destination, you do the accounts with Leo to
@@ -2560,8 +2518,6 @@ MonoBehaviour:
     that you are!
   textSpeed: 0.05
   timeStartTextDialogue: 0.5
-  _timeBeforeLoad: 0.5
-  _btnSound: {fileID: 0}
   textComponent: {fileID: 618908822}
 --- !u!114 &618908822
 MonoBehaviour:
@@ -2705,9 +2661,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a50cdc88117b1cb49933be0186e7663a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timeBeforeLoad: 0.2
-  _btnSound: {fileID: 0}
-  _ambiantSound: {fileID: 697031670}
+  timeBeforeLoad: 0.2
+  btnSound: {fileID: 0}
+  ambiantSound: {fileID: 697031670}
 --- !u!82 &697031670
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3047,16 +3003,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61bc6d47a7d857e4c8a19e5dace3130b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timeBeforeLoad: 0.5
-  _btnSound: {fileID: 712719325}
-  _panDialogue2: {fileID: 0}
-  _panDialogue3: {fileID: 1724431666}
-  _panDialogue4: {fileID: 0}
-  _panDialogue5: {fileID: 1559808778}
-  _panDialogue6: {fileID: 0}
-  _imgBackground: {fileID: 19317224}
-  _imgMegalodon: {fileID: 337714951}
-  _imgKiller: {fileID: 0}
+  timeBeforeLoad: 0.2
+  btnSound: {fileID: 712719325}
+  imgBackground: {fileID: 19317224}
+  imgMegalodon: {fileID: 337714951}
+  imgKiller: {fileID: 0}
+  panDial2: {fileID: 0}
+  panDial3: {fileID: 1724431666}
+  panDial4: {fileID: 0}
+  panDial5: {fileID: 1559808778}
+  panDial6: {fileID: 0}
 --- !u!1 &851886900
 GameObject:
   m_ObjectHideFlags: 0
@@ -3371,17 +3327,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf3ed295037ccc4095b1fda8070b2b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timeBeforeLoad: 0.2
-  _btnSound: {fileID: 986336252}
-  _panDialogue1: {fileID: 1496181463}
-  _panDialogue2: {fileID: 1021786300}
-  _panDialogue3: {fileID: 0}
-  _panDialogue4: {fileID: 0}
-  _btnChoice1: {fileID: 0}
-  _btnChoice2: {fileID: 0}
-  _imgClement: {fileID: 0}
-  _imgBackground: {fileID: 0}
-  _imgLost: {fileID: 0}
+  timeBeforeLoad: 0.2
+  btnSound: {fileID: 986336252}
+  btnChoice1: {fileID: 0}
+  btnChoice2: {fileID: 0}
+  imgClement: {fileID: 0}
+  imgBackground: {fileID: 0}
+  imgLost: {fileID: 0}
+  panDial1: {fileID: 1496181463}
+  panDial2: {fileID: 1021786300}
+  panDial3: {fileID: 0}
+  panDial4: {fileID: 0}
 --- !u!1 &1014512615
 GameObject:
   m_ObjectHideFlags: 0
@@ -3664,16 +3620,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61bc6d47a7d857e4c8a19e5dace3130b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timeBeforeLoad: 0.5
-  _btnSound: {fileID: 1014566698}
-  _panDialogue2: {fileID: 1021786300}
-  _panDialogue3: {fileID: 0}
-  _panDialogue4: {fileID: 2001083894}
-  _panDialogue5: {fileID: 0}
-  _panDialogue6: {fileID: 0}
-  _imgBackground: {fileID: 0}
-  _imgMegalodon: {fileID: 0}
-  _imgKiller: {fileID: 0}
+  timeBeforeLoad: 0.2
+  btnSound: {fileID: 1014566698}
+  imgBackground: {fileID: 0}
+  imgMegalodon: {fileID: 0}
+  imgKiller: {fileID: 0}
+  panDial2: {fileID: 1021786300}
+  panDial3: {fileID: 0}
+  panDial4: {fileID: 2001083894}
+  panDial5: {fileID: 0}
+  panDial6: {fileID: 0}
 --- !u!1 &1021786300
 GameObject:
   m_ObjectHideFlags: 0
@@ -3824,14 +3780,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70abe30fc94d5ad4b89ff56c05d6d57c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeBeforeLoad: 0.5
+  btnSound: {fileID: 0}
   lines:
   - One of your sailors, Lukas, can no longer stand your lack of judgment, he thinks
     that you only take bad decisions... Determined to overtrhow you, he kills you
     and takes your place as the captain to take over the treasure!
   textSpeed: 0.05
   timeStartTextDialogue: 0.5
-  _timeBeforeLoad: 0.5
-  _btnSound: {fileID: 0}
   textComponent: {fileID: 1115228952}
 --- !u!114 &1115228952
 MonoBehaviour:
@@ -4222,13 +4178,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70abe30fc94d5ad4b89ff56c05d6d57c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeBeforeLoad: 0.5
+  btnSound: {fileID: 0}
   lines:
   - So you approach the island with hopes of being right! Meanwhile Leo requisitions
     you to do the accounts. But this thankless task is not made for you!
   textSpeed: 0.05
   timeStartTextDialogue: 0.5
-  _timeBeforeLoad: 0.5
-  _btnSound: {fileID: 0}
   textComponent: {fileID: 1305699982}
 --- !u!114 &1305699982
 MonoBehaviour:
@@ -4888,6 +4844,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70abe30fc94d5ad4b89ff56c05d6d57c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeBeforeLoad: 0.5
+  btnSound: {fileID: 0}
   lines:
   - You go to clear your mind on the deck of your beautiful ship, you notice something
     fishy in the distance. You take out your spotting scope to see better what's
@@ -4895,8 +4853,6 @@ MonoBehaviour:
     It's over, she's going to devour everything in her path
   textSpeed: 0.05
   timeStartTextDialogue: 0.5
-  _timeBeforeLoad: 0.5
-  _btnSound: {fileID: 0}
   textComponent: {fileID: 1616667429}
 --- !u!114 &1616667429
 MonoBehaviour:
@@ -5416,9 +5372,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a50cdc88117b1cb49933be0186e7663a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timeBeforeLoad: 0.5
-  _btnSound: {fileID: 1916408741}
-  _ambiantSound: {fileID: 0}
+  timeBeforeLoad: 0.2
+  btnSound: {fileID: 1916408741}
+  ambiantSound: {fileID: 0}
 --- !u!82 &1916408741
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5952,16 +5908,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61bc6d47a7d857e4c8a19e5dace3130b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timeBeforeLoad: 0.5
-  _btnSound: {fileID: 2026866862}
-  _panDialogue2: {fileID: 0}
-  _panDialogue3: {fileID: 2001083894}
-  _panDialogue4: {fileID: 0}
-  _panDialogue5: {fileID: 1559808778}
-  _panDialogue6: {fileID: 0}
-  _imgBackground: {fileID: 19317224}
-  _imgMegalodon: {fileID: 337714951}
-  _imgKiller: {fileID: 0}
+  timeBeforeLoad: 0.2
+  btnSound: {fileID: 2026866862}
+  imgBackground: {fileID: 19317224}
+  imgMegalodon: {fileID: 337714951}
+  imgKiller: {fileID: 0}
+  panDial2: {fileID: 0}
+  panDial3: {fileID: 2001083894}
+  panDial4: {fileID: 0}
+  panDial5: {fileID: 1559808778}
+  panDial6: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

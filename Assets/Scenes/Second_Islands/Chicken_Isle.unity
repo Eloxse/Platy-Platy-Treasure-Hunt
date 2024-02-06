@@ -585,6 +585,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70abe30fc94d5ad4b89ff56c05d6d57c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeBeforeLoad: 0.5
+  btnSound: {fileID: 0}
   lines:
   - Luck is still not on your side and the eternal storm Rayan is catching up with
     you much faster than you thought. But you have already reached the high seas.
@@ -592,8 +594,6 @@ MonoBehaviour:
     the rushing waters of Chicken Isle.
   textSpeed: 0.05
   timeStartTextDialogue: 0.5
-  _timeBeforeLoad: 0.5
-  _btnSound: {fileID: 0}
   textComponent: {fileID: 244193212}
 --- !u!114 &244193212
 MonoBehaviour:
@@ -745,9 +745,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a50cdc88117b1cb49933be0186e7663a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timeBeforeLoad: 0.5
-  _btnSound: {fileID: 253185953}
-  _ambiantSound: {fileID: 0}
+  timeBeforeLoad: 0.2
+  btnSound: {fileID: 253185953}
+  ambiantSound: {fileID: 0}
 --- !u!82 &253185953
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1041,7 +1041,6 @@ GameObject:
   - component: {fileID: 337714955}
   - component: {fileID: 337714954}
   - component: {fileID: 337714953}
-  - component: {fileID: 337714952}
   m_Layer: 5
   m_Name: Img_Map
   m_TagString: Untagged
@@ -1049,27 +1048,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!95 &337714952
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 337714951}
-  m_Enabled: 0
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 725a43f3e86252a4daa3d85945bc4242, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &337714953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1407,19 +1385,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 960bb61ccc80c844cb12ac6a47b0e4dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timeBeforeLoad: 0.5
-  _btnSound: {fileID: 548194918}
-  _imgBackground: {fileID: 19317224}
-  _imgMap: {fileID: 0}
-  _imgKraken: {fileID: 1919202241}
-  _imgSinking: {fileID: 0}
-  _vid: {fileID: 851886900}
-  _panDialogue1: {fileID: 0}
-  _panDialogue2: {fileID: 1021786300}
-  _panDialogue3: {fileID: 131488950}
-  _panDialogue4: {fileID: 0}
-  _btnChickenIsle: {fileID: 0}
-  _btnBlackSand: {fileID: 0}
+  timeBeforeLoad: 0.2
+  btnSound: {fileID: 548194918}
+  btnChickenIsle: {fileID: 0}
+  btnBlackSand: {fileID: 0}
+  imgBackground: {fileID: 19317224}
+  imgMap: {fileID: 0}
+  imgKraken: {fileID: 1919202241}
+  imgSinking: {fileID: 0}
+  vid: {fileID: 851886900}
+  panDial1: {fileID: 0}
+  panDial2: {fileID: 1021786300}
+  panDial3: {fileID: 131488950}
+  panDial4: {fileID: 0}
 --- !u!1 &577516239
 GameObject:
   m_ObjectHideFlags: 0
@@ -1470,6 +1448,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70abe30fc94d5ad4b89ff56c05d6d57c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeBeforeLoad: 0.5
+  btnSound: {fileID: 0}
   lines:
   - After your misadventure at Black Sand Atoll, you finally arrive at Chicken Isle.
     How to say... An island very feared by all pirates. Anyone who dares to venture
@@ -1477,8 +1457,6 @@ MonoBehaviour:
     a treasure of inestimable value.
   textSpeed: 0.05
   timeStartTextDialogue: 0.5
-  _timeBeforeLoad: 0.5
-  _btnSound: {fileID: 0}
   textComponent: {fileID: 577516242}
 --- !u!114 &577516242
 MonoBehaviour:
@@ -1627,14 +1605,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70abe30fc94d5ad4b89ff56c05d6d57c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeBeforeLoad: 0.5
+  btnSound: {fileID: 0}
   lines:
   - And to not make your treasure quest any easier, the weather is not on your side.
     A big storm is looming in the distance, you can't find any clues on the island
     to find the treasure. You're hesitating..
   textSpeed: 0.05
   timeStartTextDialogue: 0.5
-  _timeBeforeLoad: 0.5
-  _btnSound: {fileID: 0}
   textComponent: {fileID: 589809516}
 --- !u!114 &589809516
 MonoBehaviour:
@@ -1778,9 +1756,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a50cdc88117b1cb49933be0186e7663a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timeBeforeLoad: 0.2
-  _btnSound: {fileID: 0}
-  _ambiantSound: {fileID: 722166496}
+  timeBeforeLoad: 0.2
+  btnSound: {fileID: 0}
+  ambiantSound: {fileID: 722166496}
 --- !u!82 &722166496
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2191,19 +2169,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 960bb61ccc80c844cb12ac6a47b0e4dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timeBeforeLoad: 0.5
-  _btnSound: {fileID: 986336252}
-  _imgBackground: {fileID: 19317224}
-  _imgMap: {fileID: 337714951}
-  _imgKraken: {fileID: 0}
-  _imgSinking: {fileID: 0}
-  _vid: {fileID: 851886900}
-  _panDialogue1: {fileID: 1496181463}
-  _panDialogue2: {fileID: 1021786300}
-  _panDialogue3: {fileID: 0}
-  _panDialogue4: {fileID: 0}
-  _btnChickenIsle: {fileID: 1397689239}
-  _btnBlackSand: {fileID: 1543359384}
+  timeBeforeLoad: 0.2
+  btnSound: {fileID: 986336252}
+  btnChickenIsle: {fileID: 1397689239}
+  btnBlackSand: {fileID: 1543359384}
+  imgBackground: {fileID: 19317224}
+  imgMap: {fileID: 337714951}
+  imgKraken: {fileID: 0}
+  imgSinking: {fileID: 0}
+  vid: {fileID: 851886900}
+  panDial1: {fileID: 1496181463}
+  panDial2: {fileID: 1021786300}
+  panDial3: {fileID: 0}
+  panDial4: {fileID: 0}
 --- !u!1 &996639811
 GameObject:
   m_ObjectHideFlags: 0
@@ -2623,19 +2601,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 960bb61ccc80c844cb12ac6a47b0e4dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timeBeforeLoad: 0.5
-  _btnSound: {fileID: 1014566698}
-  _imgBackground: {fileID: 19317224}
-  _imgMap: {fileID: 0}
-  _imgKraken: {fileID: 0}
-  _imgSinking: {fileID: 1791235843}
-  _vid: {fileID: 851886900}
-  _panDialogue1: {fileID: 0}
-  _panDialogue2: {fileID: 1021786300}
-  _panDialogue3: {fileID: 131488950}
-  _panDialogue4: {fileID: 2069196380}
-  _btnChickenIsle: {fileID: 0}
-  _btnBlackSand: {fileID: 0}
+  timeBeforeLoad: 0.2
+  btnSound: {fileID: 1014566698}
+  btnChickenIsle: {fileID: 0}
+  btnBlackSand: {fileID: 0}
+  imgBackground: {fileID: 19317224}
+  imgMap: {fileID: 0}
+  imgKraken: {fileID: 0}
+  imgSinking: {fileID: 1791235843}
+  vid: {fileID: 851886900}
+  panDial1: {fileID: 0}
+  panDial2: {fileID: 1021786300}
+  panDial3: {fileID: 0}
+  panDial4: {fileID: 2069196380}
 --- !u!1 &1021786300
 GameObject:
   m_ObjectHideFlags: 0
@@ -2786,14 +2764,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70abe30fc94d5ad4b89ff56c05d6d57c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeBeforeLoad: 0.5
+  btnSound: {fileID: 0}
   lines:
   - 'Your self-confidence led to your downfall... In this terrible storm hid what
     all pirates fear: Paul The Kraken. Your last ones will have served as a snack
     for this insassiable animal. And this is how your quest ends!'
   textSpeed: 0.05
   timeStartTextDialogue: 0.5
-  _timeBeforeLoad: 0.5
-  _btnSound: {fileID: 0}
   textComponent: {fileID: 1050556214}
 --- !u!114 &1050556214
 MonoBehaviour:
@@ -2982,9 +2960,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a50cdc88117b1cb49933be0186e7663a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timeBeforeLoad: 0.5
-  _btnSound: {fileID: 1182807716}
-  _ambiantSound: {fileID: 0}
+  timeBeforeLoad: 0.2
+  btnSound: {fileID: 1182807716}
+  ambiantSound: {fileID: 0}
 --- !u!82 &1182807716
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3461,7 +3439,6 @@ GameObject:
   - component: {fileID: 1397689240}
   - component: {fileID: 1397689243}
   - component: {fileID: 1397689242}
-  - component: {fileID: 1397689241}
   m_Layer: 5
   m_Name: ChickenIsle
   m_TagString: Untagged
@@ -3489,62 +3466,6 @@ RectTransform:
   m_AnchoredPosition: {x: -670.5, y: -29.6}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1397689241
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1397689239}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.7169812, g: 0.7169812, b: 0.7169812, a: 1}
-    m_PressedColor: {r: 0.6509434, g: 0.6509434, b: 0.6509434, a: 0.8}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 1397689242}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Booty_Island, Assembly-CSharp
-        m_MethodName: LoadBlackWater
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1397689242
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3735,14 +3656,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33f715618b8dab64eba951b6c7758bc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timeBeforeLoad: 0.5
-  _btnSound: {fileID: 1534307391}
-  _imgBackground: {fileID: 0}
-  _imgMap: {fileID: 0}
-  _panDialogue1: {fileID: 0}
-  _btnBlackWater: {fileID: 0}
-  _btnBlindMans: {fileID: 0}
-  _btnIslandDone: {fileID: 0}
+  timeBeforeLoad: 0.2
+  btnSound: {fileID: 1534307391}
+  btnBlackWater: {fileID: 0}
+  btnBlindMans: {fileID: 0}
+  btnIslandDone: {fileID: 0}
+  imgBackground: {fileID: 0}
+  imgMap: {fileID: 0}
+  panDial1: {fileID: 0}
 --- !u!82 &1534307391
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3944,7 +3865,6 @@ GameObject:
   - component: {fileID: 1543359385}
   - component: {fileID: 1543359388}
   - component: {fileID: 1543359387}
-  - component: {fileID: 1543359386}
   m_Layer: 5
   m_Name: BlackSand
   m_TagString: Untagged
@@ -3972,50 +3892,6 @@ RectTransform:
   m_AnchoredPosition: {x: 18.9, y: 168.6}
   m_SizeDelta: {x: 75, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1543359386
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1543359384}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 1}
-    m_PressedColor: {r: 1, g: 1, b: 1, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 1543359387}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &1543359387
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -6,11 +6,18 @@ using UnityEngine.SceneManagement;
 public class Black_Water : MonoBehaviour
 {
     #region Variables
-    [SerializeField] private float _timeBeforeLoad = 0.5f;
+    [Header("Manager")]
+    [SerializeField] private float timeBeforeLoad = 0.5f;
 
-    [SerializeField] private AudioSource _btnSound;
-    [SerializeField] private GameObject _panDialogue2, _panDialogue3, _panDialogue4, _panDialogue5, _panDialogue6;
-    [SerializeField] private GameObject _imgBackground, _imgMegalodon, _imgKiller;
+    [SerializeField] private AudioSource btnSound;
+
+    [Header("Images")]
+    [SerializeField] private GameObject imgBackground;
+    [SerializeField] private GameObject imgMegalodon, imgKiller;
+
+    [Header("Pannel")]
+    [SerializeField] private GameObject panDial2;
+    [SerializeField] private GameObject panDial3, panDial4, panDial5, panDial6;
     #endregion
 
     #region Custom Methods
@@ -19,10 +26,11 @@ public class Black_Water : MonoBehaviour
     }
 
     private IEnumerator DelayRefuling(){
-        _btnSound.Play();
-        yield return new WaitForSeconds(_timeBeforeLoad);
-        _panDialogue2.SetActive(false);
-        _panDialogue3.SetActive(true);
+        btnSound.Play();
+        yield return new WaitForSeconds(timeBeforeLoad);
+        panDial2.SetActive(false);
+
+        panDial3.SetActive(true);
     }
     
     public void Arise(){
@@ -30,10 +38,11 @@ public class Black_Water : MonoBehaviour
     }
 
     private IEnumerator DelayArise(){
-        _btnSound.Play();
-        yield return new WaitForSeconds(_timeBeforeLoad);
-        _panDialogue2.SetActive(false);
-        _panDialogue4.SetActive(true);
+        btnSound.Play();
+        yield return new WaitForSeconds(timeBeforeLoad);
+        panDial2.SetActive(false);
+
+        panDial4.SetActive(true);
     }
     
     public void Megalodon(){
@@ -41,12 +50,13 @@ public class Black_Water : MonoBehaviour
     }
 
     private IEnumerator DelayMegalodon(){
-        _btnSound.Play();
-        yield return new WaitForSeconds(_timeBeforeLoad);
-        _panDialogue3.SetActive(false);
-        _panDialogue5.SetActive(true);
-        _imgBackground.SetActive(true);
-        _imgMegalodon.SetActive(true);
+        btnSound.Play();
+        yield return new WaitForSeconds(timeBeforeLoad);
+        panDial3.SetActive(false);
+
+        panDial5.SetActive(true);
+        imgBackground.SetActive(true);
+        imgMegalodon.SetActive(true);
     }
     
     public void Count(){
@@ -54,8 +64,8 @@ public class Black_Water : MonoBehaviour
     }
 
     private IEnumerator DelayCount(){
-        _btnSound.Play();
-        yield return new WaitForSeconds(_timeBeforeLoad);
+        btnSound.Play();
+        yield return new WaitForSeconds(timeBeforeLoad);
         SceneManager.LoadScene("Blind_Mans_Lagoon", LoadSceneMode.Single);
     }
     
@@ -64,12 +74,13 @@ public class Black_Water : MonoBehaviour
     }
 
     private IEnumerator DelayKiller(){
-        _btnSound.Play();
-        yield return new WaitForSeconds(_timeBeforeLoad);
-        _panDialogue4.SetActive(false);
-        _panDialogue6.SetActive(true);
-        _imgBackground.SetActive(true);
-        _imgKiller.SetActive(true);
+        btnSound.Play();
+        yield return new WaitForSeconds(timeBeforeLoad);
+        panDial4.SetActive(false);
+
+        panDial6.SetActive(true);
+        imgBackground.SetActive(true);
+        imgKiller.SetActive(true);
     }
     #endregion
 }
